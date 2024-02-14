@@ -32,9 +32,9 @@ function toggleState3() {
 }
 
 let imgObject = [
-  "sushi.jpg",
-  "Mapo_Tofu.jpg",
-  "CoteDeBoeuf.jpg",
+  'sushi.jpg',
+  'Mapo_Tofu.jpg',
+  'CoteDeBoeuf.jpg',
 ];
 
 let mainImg = 0;
