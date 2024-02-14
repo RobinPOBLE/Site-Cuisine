@@ -46,6 +46,9 @@ function loadGallery() {
   let mainView = document.getElementById("mainView");
   mainView.style.background = "url(" + imgObject[mainImg] + ")";
 
+  let recipeText = document.getElementById("recipeText");
+  recipeText.style.background = 'sushi;jpg';
+
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg] + ")";
   
