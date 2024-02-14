@@ -20,8 +20,7 @@
 </head>
 
 <body>
-    <a id="haut"></a>
-    <header>
+    <header id="haut">
         <h1>Miamiton UwU</h1>
         <h2>Votre site de cuisine favori</h2>
     </header>
@@ -29,7 +28,12 @@
         
     <nav>
         <ul>
-            <li><a href=""> </a></li>
+            <li class="deroulant"><a href="index.html">Accueil</a></li>
+            <li class="deroulant"><a href="index.html">Accueil</a></li>
+                <ul class="sous">
+                    <li><a href="index.html">Accueil</a></li>
+                </ul>
+        </ul>
 
         
     <div id="container">
@@ -54,15 +58,16 @@
             </div>
         </div>
         <div id="textBox">
-            <div id="recipeText"></div>
+            <div id="recipeText">test</div>
         </div>
         <div id="tilesView">
             <div id="tilesContainer"></div>
         </div>
     </div>
+
     <script src="carousel.js"></script>
 
 
-    <footer><a href="#haut"></a></footer>
+    <footer><a href="#haut">Haut</a></footer>
 </body>
 </main>
