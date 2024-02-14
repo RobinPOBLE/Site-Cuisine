@@ -2,9 +2,10 @@
 @import "normalize.css";
 
 *, html, body {
+
     padding: 0;
     margin: 0;
-    color: white;
+    color: #ff7f95;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
@@ -78,7 +79,7 @@
     margin: 10px;
   }
   
-  /*
+  
   #tilesView {
     min-height: 100vh;
     width: 100vw;
@@ -89,7 +90,7 @@
     justify-content: center;
     align-items: center;
   }
-  */
+  
   
   #galleryView {
     height: 100vh;
@@ -105,17 +106,17 @@
   #outer3 {
     width: 100px;
     height: 40px;
-    background-color: white;
+    background-color: #ff7f95;
     margin: 10px auto;
     border-radius: 3px;
-    border: 2px solid white;
+    border: 2px solid #ff7f95;
     transition: all 0.5s;
   }
   
   #slider3 {
     height: 36px;
     width: 46px;
-    background-color: #ececec;
+    background-color: #f44d6a;
     border-radius: 3px;  
     transition: all 0.5s;
   }
@@ -126,9 +127,8 @@
     -o-transform: translatex(50px);
     transform: translatex(50px);
     transition: all 0.5s;
-    background-color: #ececec;
+    background-color: #f44d6a;
 }
-  
   #outer3.outerActive {
     background-color: white;
     border: 2px solid white;
