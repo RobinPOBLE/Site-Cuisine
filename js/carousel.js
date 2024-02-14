@@ -24,7 +24,7 @@ function toggleState3() {
     for (let i = 0; i < imgObject.length - 1; i++) {
       let tileItem = document.createElement("div");
       tileItem.classList.add("tileItem");
-      tileItem.style.background =  "url(" + imgObject[i] + ")";
+      tileItem.style.background =  "url(" + imgObject[i][0] + ")";
       tileItem.style.backgroundSize = "contain";  
       tilesContainer.appendChild(tileItem);      
     }
@@ -32,9 +32,9 @@ function toggleState3() {
 }
 
 let imgObject = [
-  'sushi.jpg',
-  'Mapo_Tofu.jpg',
-  'CoteDeBoeuf.jpg',
+  ['images/Sushi.jpg',"Sushi délicieux trop baka UwU"],
+  ['images/MapoTofu.jpg',"Mapo Tofu qui pique de ouf"],
+  ['images/CoteDeBoeuf.jpg',"Côte de Boeuf pour les vrai HOMMES"],
 ];
 
 let mainImg = 0;
@@ -44,19 +44,20 @@ let nextImg = 1;
 function loadGallery() {
 
   let mainView = document.getElementById("mainView");
-  mainView.style.background = "url(" + imgObject[mainImg] + ")";
+  mainView.style.background = "url(" + imgObject[mainImg][0] + ")";
 
-  let recipeText = document.getElementById("recipeText");
-  recipeText.style.background = 'sushi;jpg';
 
   let leftView = document.getElementById("leftView");
-  leftView.style.background = "url(" + imgObject[prevImg] + ")";
+  leftView.style.background = "url(" + imgObject[prevImg][0] + ")";
   
   let rightView = document.getElementById("rightView");
-  rightView.style.background = "url(" + imgObject[nextImg] + ")";
+  rightView.style.background = "url(" + imgObject[nextImg][0] + ")";
   
   let linkTag = document.getElementById("linkTag")
-  linkTag.href = imgObject[mainImg];
+  linkTag.href = imgObject[mainImg][0];
+
+  let mainText = document.getElementById("mainText");
+  mainText.innerHTML=imgObject[mainImg][1];
 
 };
 
