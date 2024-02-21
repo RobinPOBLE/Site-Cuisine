@@ -12,7 +12,52 @@
     
   }
 
+  footer {
+
+    position: fixed;
+    bottom: 0;
+    margin-top: 1vh;
+    width: 100vw;
+    height:5vh;
+    text-align: center;
+
+
+  }
+
+  @media screen and (orientation: landscape) {
+    #baratin {
+      width: 100%;
+      align-self: center;
+      justify-content: center;
+      font-size: large;
+    }
+
+    #baratinContainer {
+      width: 50vw;
+      height: 200px;
+      align-items: center;
+      margin: auto;
+    }
+  }
+
+  @media screen and (orientation: portrait) {
+    #baratin {
+      width: 100%;
+      align-self: center;
+      justify-content: center;
+      font-size: medium;
+    }
+
+    #baratinContainer {
+      width: 100vw;
+      height: 200px;
+      align-items: center;
+      margin: auto;
+    }
+  }
+
   #menu{
+    height: 10vh; 
     width:100%;
     margin:0 auto;
     background-color:#ececec;
@@ -95,255 +140,17 @@
     position: relative;
 
   }
-  /*CSS pour carousel*/
 
-@media screen and (orientation: landscape) {
+  /*
+  CSS pour carousel
+  */
+
+  #mainText {
+    align-self: center;
+    justify-content: center;
+    font-size: larger;
     
-  
-
-  #toggleContainer label { 
-    text-align: center;
-    width: 70px;
-  }
-  
-  #container {
-    height: 100vh;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  #toggleContainer {
-    height: 10vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 95vw;
-    position: absolute;
-  }
-  
-  #tilesContainer {
-    min-height: 90vh;
-    width: 100vw;
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    align-content: center;
-    
-  }
-  
-  .tileItem {
-    width: 250px;
-    height: 250px;
-    margin: 5px;
-    border-radius: 5px;
-    
-    transition: all 0.5s ease;
-  }
-  
-  .tileItem:hover {
-     transform: scale(1.05);
-    transition: all 0.5s ease;
-  }
-  
-  #galleryContainer { 
-    height: 500px;
-    width: 800px;
-    background: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    position: relative;
-  }
-  
-  #toggle {
-    height: 10vh;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    margin: 10px;
-  }
-  
-  
-  #tilesView {
-    min-height: 75vh;
-    width: 100vw;
-    background: rgb(236,236,236);
-    background: linear-gradient(111deg, rgba(246,210,106,1) 0%, rgba(255,159,0,1) 52%, rgba(251,197,100,1) 100%);
-    
-    display: none;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  #galleryView {
-    height: 50vh;
-    width: 100vw;
-    background: rgb(236,236,236);
-    /*background: linear-gradient(111deg, rgba(246,210,106,1) 0%, rgba(255,159,0,1) 52%, rgba(251,197,100,1) 100%);
-    */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #outer3 {
-    width: 100px;
-    height: 40px;
-    background-color: #ff7f95;
-    margin: 10px auto;
-    border-radius: 3px;
-    border: 2px solid #ff7f95;
-    transition: all 0.5s;
-  }
-  
-  #slider3 {
-    height: 36px;
-    width: 46px;
-    background-color: #f44d6a;
-    border-radius: 3px;  
-    transition: all 0.5s;
-  }
-  
-  #slider3.active {
-    -webkit-transform: translatex(50px);
-    -ms-transform: translatex(50px);
-    -o-transform: translatex(50px);
-    transform: translatex(50px);
-    transition: all 0.5s;
-    background-color: #f44d6a;
-}
-  #outer3.outerActive {
-    background-color: white;
-    border: 2px solid white;
-    transition: all 0.5s;
-  }
-  
-  #textBox {
-    height: 25vh;
-    width: 100vw;
-    background: transparent;
-    /*background: linear-gradient(111deg, rgba(246,210,106,1) 0%, rgba(255,159,0,1) 52%, rgba(251,197,100,1) 100%);
-    */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #recipeText {
-    height:225px;
-    width: 425px;
-    border-radius: 5px;
-    border: 2px solid #f44d6a;
-    background-color: orange;
-    margin-left: 10px;
-    margin-right: 10px;
-    z-index: 1;
-    transition: all 0.5s;  
-    justify-content: center;
-    
-  }
-  
-
-  #mainView {
-    height: 300px;
-    width: 450px;  
-    border-radius: 5px;
-    background-color: #ececec;
-    margin-left: 10px;
-    margin-right: 10px;
-    z-index: 1;
-    transition: all 0.5s;  
-  }
-  
-  #mainView:hover {
-    transform: scale(1.2);
-    transition: all 0.5s;   
-  }
-  
-  #leftView {
-    height: 275px;
-    width: 150px;
-    opacity: 0.5;
-    border-radius: 5px;
-    transform: skewy(5deg);
-    transform-origin: top right;
-    background-color: #ececec;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s;  
-  }
-  
-  #leftView:hover {
-    opacity: 1;
-    transition: all 0.5s;
-  }
-  
-  #rightView {
-    height: 275px;
-    width: 150px;
-    opacity: 0.5;
-    border-radius: 5px;
-    transform: skewy(-5deg);
-    transform-origin: top left;
-    background-color: #ececec;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   transition: all 0.5s;
-  }
-  
-  #rightView:hover {
-    opacity: 1;
-    transition: all 1s;
-  }
-  
-  .navBtns {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: none;
-    position: absolute;
-    opacity: 0.8;
-    background-color: transparent;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .navBtns:hover {
-    opacity: 1;
-    transition: all 0.5s;
-    background-color: #ececec;
-  }
-  
-  #navLeft {
-    left: 50px;
-  }
-  
-  #navRight {
-    right: 50px;
-  }
-  
-  #linkTag { 
-    cursor: pointer;
-    z-index: 1;
-    box-sizing: border-box;
-  }
-
-}
-
-/*
-Carousel pour tel
-*/
-
-@media screen and (orientation: portrait) {
-    
+  }    
 
   #toggleContainer label { 
     text-align: center;
@@ -367,7 +174,7 @@ Carousel pour tel
   #tilesContainer {
     min-height: 90vh;
     width: 100vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,11 +210,11 @@ Carousel pour tel
   }
   
   #toggle {
-    height: 10vh;
-    width: 20vw;
+    height: 0vh;
+    width: 0vw;
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 0px;
   }
   
   
@@ -435,28 +242,28 @@ Carousel pour tel
   }
   
   #outer3 {
-    width: 100px;
-    height: 40px;
+    width: 0px;
+    height: 0px;
     background-color: #ff7f95;
-    margin: 10px auto;
+    margin: 0px auto;
     border-radius: 3px;
-    border: 2px solid #ff7f95;
+    border: 0px solid #ff7f95;
     transition: all 0.5s;
   }
   
   #slider3 {
-    height: 36px;
-    width: 46px;
+    height: 0px;
+    width: 0px;
     background-color: #f44d6a;
     border-radius: 3px;  
     transition: all 0.5s;
   }
   
   #slider3.active {
-    -webkit-transform: translatex(50px);
-    -ms-transform: translatex(50px);
-    -o-transform: translatex(50px);
-    transform: translatex(50px);
+    -webkit-transform: translatex(0px);
+    -ms-transform: translatex(0px);
+    -o-transform: translatex(0px);
+    transform: translatex(0px);
     transition: all 0.5s;
     background-color: #f44d6a;
 }
@@ -493,8 +300,8 @@ Carousel pour tel
   
 
   #mainView {
-    height: 75vh;
-    width: 42vw;  
+    height: 45vh;
+    width: 55vw;  
     border-radius: 5px;
     background-color: #ececec;
     margin-left: 10px;
@@ -509,8 +316,8 @@ Carousel pour tel
   }
   
   #leftView {
-    height: 8vh;
-    width: 4.5vw;
+    height: 45vh;
+    width: 17.5vw;
     opacity: 0.5;
     border-radius: 5px;
     transform: skewy(5deg);
@@ -528,8 +335,8 @@ Carousel pour tel
   }
   
   #rightView {
-    height: 8vh;
-    width: 4.5vw;
+    height: 45vh;
+    width: 17.5vw;
     opacity: 0.5;
     border-radius: 5px;
     transform: skewy(-5deg);
@@ -577,5 +384,3 @@ Carousel pour tel
     z-index: 1;
     box-sizing: border-box;
   }
-
-}

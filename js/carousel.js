@@ -45,13 +45,15 @@ function loadGallery() {
 
   let mainView = document.getElementById("mainView");
   mainView.style.background = "url(" + imgObject[mainImg][0] + ")";
-
+  mainView.style.backgroundSize = "cover";
 
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg][0] + ")";
+  leftView.style.backgroundSize = "cover";
   
   let rightView = document.getElementById("rightView");
   rightView.style.background = "url(" + imgObject[nextImg][0] + ")";
+  leftView.style.backgroundSize = "cover";
   
   let linkTag = document.getElementById("linkTag")
   linkTag.href = imgObject[mainImg][0];
