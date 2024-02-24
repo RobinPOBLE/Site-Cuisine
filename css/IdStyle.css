@@ -1,5 +1,4 @@
 
-@import "normalize.css";
 
 *, html, body {
 
@@ -11,6 +10,52 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     
+  }
+
+  footer {
+
+    position: fixed;
+    bottom: 0;
+    margin-top: 1vh;
+    width: 100vw;
+    height:5vh;
+    text-align: center;
+
+
+  }
+
+  @media screen and (orientation: landscape) {
+    #baratin {
+      width: 100%;
+      align-self: center;
+      justify-content: center;
+      font-size: large;
+    }
+
+    #baratinContainer {
+      width: 50vw;
+      height: 300px;
+      align-items: center;
+      margin: auto;
+      padding-bottom: 5vh;
+    }
+  }
+
+  @media screen and (orientation: portrait) {
+    #baratin {
+      width: 100%;
+      align-self: center;
+      justify-content: center;
+      font-size: medium;
+    }
+
+    #baratinContainer {
+      width: 100vw;
+      height: 300px;
+      align-items: center;
+      margin: auto;
+      padding-bottom: 5vh;
+    }
   }
 
 
@@ -91,17 +136,23 @@
     text-align: center;
   }
 
+  /*
+  CSS pour carousel
+  */
 
+  #mainText {
+    align-self: center;
+    justify-content: center;
+    font-size: larger;
+    
+  }    
 
-
-  /*CSS pour carousel*/
   #toggleContainer label { 
     text-align: center;
     width: 70px;
   }
   
   #container {
-    height: 100vh;
     width: 100%;
     box-sizing: border-box;
   }
@@ -118,7 +169,7 @@
   #tilesContainer {
     min-height: 90vh;
     width: 100vw;
-    margin-top: 10vh;
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +194,7 @@
   }
   
   #galleryContainer { 
-    width: 800px;
+    width: 90vw;
     background: transparent;
     display: flex;
     flex-direction: row;
@@ -154,11 +205,11 @@
   }
   
   #toggle {
-    height: 10vh;
-    width: 200px;
+    height: 0vh;
+    width: 0vw;
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 0px;
   }
   
   
@@ -175,7 +226,7 @@
   
   
   #galleryView {
-    height: 50vh;
+    height: 90vh;
     width: 100vw;
     background: rgb(236,236,236);
     /*background: linear-gradient(111deg, rgba(246,210,106,1) 0%, rgba(255,159,0,1) 52%, rgba(251,197,100,1) 100%);
@@ -186,28 +237,28 @@
   }
   
   #outer3 {
-    width: 100px;
-    height: 40px;
+    width: 0px;
+    height: 0px;
     background-color: #ff7f95;
-    margin: 10px auto;
+    margin: 0px auto;
     border-radius: 3px;
-    border: 2px solid #ff7f95;
+    border: 0px solid #ff7f95;
     transition: all 0.5s;
   }
   
   #slider3 {
-    height: 36px;
-    width: 46px;
+    height: 0px;
+    width: 0px;
     background-color: #f44d6a;
     border-radius: 3px;  
     transition: all 0.5s;
   }
   
   #slider3.active {
-    -webkit-transform: translatex(50px);
-    -ms-transform: translatex(50px);
-    -o-transform: translatex(50px);
-    transform: translatex(50px);
+    -webkit-transform: translatex(0px);
+    -ms-transform: translatex(0px);
+    -o-transform: translatex(0px);
+    transform: translatex(0px);
     transition: all 0.5s;
     background-color: #f44d6a;
 }
@@ -244,8 +295,8 @@
   
 
   #mainView {
-    height: 300px;
-    width: 450px;  
+    height: 45vh;
+    width: 55vw;  
     border-radius: 5px;
     background-color: #ececec;
     margin-left: 10px;
@@ -260,8 +311,8 @@
   }
   
   #leftView {
-    height: 275px;
-    width: 150px;
+    height: 45vh;
+    width: 17.5vw;
     opacity: 0.5;
     border-radius: 5px;
     transform: skewy(5deg);
@@ -279,8 +330,8 @@
   }
   
   #rightView {
-    height: 275px;
-    width: 150px;
+    height: 45vh;
+    width: 17.5vw;
     opacity: 0.5;
     border-radius: 5px;
     transform: skewy(-5deg);
