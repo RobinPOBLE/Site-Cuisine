@@ -12,6 +12,14 @@
     
   }
 
+  /*
+    Modifie la tête des links
+  */
+
+  a {
+    text-decoration: none;
+  }
+
   footer {
 
     position: fixed;
@@ -23,6 +31,10 @@
 
 
   }
+
+/*
+  Media Queries pour le texte en dessous du caroussel
+*/
 
   @media screen and (orientation: landscape) {
     #baratin {
@@ -147,9 +159,14 @@
   CSS pour carousel
   */
 
+
+  /* Texte sous l'image de recette au milieu */
   #mainText {
-    align-self: center;
-    justify-content: center;
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
     font-size: larger;
     
   }    
