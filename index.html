@@ -4,6 +4,7 @@
 <head>
     <style>
         @import "./css/IdStyle.css";
+        @import "./css/normalize.css";
     </style>
 
     <meta http-equiv="content-type" content="text/html ;charset=utf-8" />
@@ -27,14 +28,20 @@
         
     <nav class="menu">
         <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li class="deroulant"><a href="index.html">Accueil</a></li>
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+            <li class="deroulant">
+                <a href="index.html">Accueil</a>
                 <ul class="sous">
-                    <li><a href="index.html">Accueil</a></li>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
                 </ul>
+            </li>
         </ul>
-
-        
+    </nav>
+    <!--Carrousel dynamique-->
     <div id="container">
         <div id="toggleContainer">
             <label>Carousel</label>
@@ -60,8 +67,13 @@
     </div>
 
     <script src="./js/carousel.js"></script>
+<!--Fin carrousel-->
 
 
-    <footer><a href="#haut">Haut</a></footer>
+    <a class="top" href="#haut">Haut</a>
 </body>
 </main>
+
+<footer>
+   Open source Miamiton (pas une copie de marmiton)
+</footer>
