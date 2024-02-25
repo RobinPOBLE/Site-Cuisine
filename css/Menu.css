@@ -1,0 +1,54 @@
+/*Code css menu déroulant"*/
+.menu{
+    width:100%;
+    margin:0 auto;
+    position:sticky;
+    z-index:5;
+  }
+
+  .menu ul{
+    list-style-type: none;}
+    
+  .menu > ul > li{
+    float:left;
+    width:25%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .menu ul::after{
+    content: "";
+    display:table;
+    clear:both;
+  }
+    
+  .menu a{
+    display:block;
+    transition: all 0.5s ease;
+  }
+  
+  .menu a:hover{
+    color:orange;
+    transform: scale(1.3);
+    transition: all 0.5s ease;
+  }
+  .sous{
+    display:none;
+    box-shadow:0px 1px 2px #CCC;
+    position: absolute;
+    width: 100%;
+    padding:5px;
+  }
+  .menu ul li:hover > .sous{
+    display:block;
+  }
+  .sous li{
+    width:100%;
+    text-align:center;
+  } 
+  .sous a{
+    border-bottom:none;
+  }
+  .sous a:hover{
+    border-bottom:none;
+  }
