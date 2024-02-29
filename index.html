@@ -5,16 +5,17 @@
 
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/IdStyle.css">
+        <link rel="stylesheet" href="./css/Carrousel.css">
+        <link rel="stylesheet" href="./css/Menu.css">
+        <link rel="stylesheet" href="./css/flexbox.css">
         
 
 
-    <meta http-equiv="content-type" content="text/html ;charset=utf-8" />
-    <meta charset="utf-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="SERANGE Valentin/POBLE Robin" />
-    <meta name="keywords" content="MIAM.html" />
-    <meta name="description" content="page Miamiton"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width ; initial-scale=1.0">
+    <meta name="author" content="SERANGE Valentin/POBLE Robin" >
+    <meta name="keywords" content="MIAM.html">
+    <meta name="description" content="page Miamiton">
 
     <title>Miamiton</title>
 
@@ -32,8 +33,16 @@
             <li>
                 <a href="index.html">Accueil</a>
             </li>
-            <li>
-                <a href="index.html">Accueil</a>
+            <li class="deroulant">
+                <a href="./France.html">France</a>
+                <ul class="sous">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="deroulant">
+                <a href="./Asie.html">Asie</a>
                 <ul class="sous">
                     <li>
                         <a href="index.html">Accueil</a>
@@ -76,18 +85,31 @@
                 <p>En effet en mélangeant les culture de divers continent, Miamiton espère rapprocher les peuples
                 et leur permettre d'oublier leur différents. </p>
                 <p>Nous ne sommes que des humains après tout, et comme l'a dit <strong>Samuel Chamberlain</strong> : </p>
-                <p><strong><it>Le bel art de la gastronomie est un art chaleureux. Il dépasse la barrière du langage, 
-                    fait des amis parmi les gens civilisés et réchauffe le coeur.</it></strong></p>
+                <p><strong>Le bel art de la gastronomie est un art chaleureux. Il dépasse la barrière du langage, 
+                    fait des amis parmi les gens civilisés et réchauffe le coeur.</strong></p>
             </div>
         </div>
     </article>
-
-
     
-</body>
+    <div id="containeflex">
+        <p>Plongez dans l'univers enivrant de la gastronomie française !
+
+            Des rues de Paris aux vignobles de Bordeaux, découvrez un monde de saveurs authentiques et de délices raffinés. Des fromages exquis aux pâtisseries décadentes, chaque bouchée est une invitation à l'émerveillement. Explorez la France à travers sa cuisine et laissez-vous emporter par un festin pour les sens.
+        </p>
+        <a class="France" href="./France.html"><img src="./images/France.jpg" alt="Skill issue" width="20%" ></a>
+        <p>
+            Bienvenue dans le monde captivant de la cuisine asiatique !
+
+Des saveurs exotiques des marchés aux mets raffinés des restaurants, chaque plat est une expérience sensorielle unique. Découvrez l'art des sushis japonais, les currys épicés de la Thaïlande et les délices variés de la Chine. Plongez dans un voyage gustatif où les arômes exotiques vous transportent à travers l'Asie, un festin pour les sens à chaque bouchée.
+        </p>
+        <a class="Asie" href="./Asie.html"></a><img src="./images/Asie.jpg" alt="Skill issue" width="20%" ></a>
+    </div>
 </main>
 
 <footer>
     <a class="top" href="#haut">Haut</a>
-   <p>Open source Miamiton (pas une copie de marmiton)</p>
+    <p>Open source Miamiton (pas une copie de marmiton)</p>
 </footer>
+</body>
+
+

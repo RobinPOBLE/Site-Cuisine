@@ -1,0 +1,245 @@
+
+
+  /* Texte sous l'image de recette au milieu */
+  #mainText {
+    width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: larger;
+    
+  }    
+
+  #toggleContainer label { 
+    text-align: center;
+    width: 70px;
+  }
+  
+  #container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #toggleContainer {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95vw;
+    position: absolute;
+  }
+  
+  #tilesContainer {
+    min-height: 90vh;
+    width: 100vw;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-content: center;
+    
+  }
+  
+  .tileItem {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 5px;
+    
+    transition: all 0.5s ease;
+  }
+  
+  .tileItem:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  }
+  
+  #galleryContainer { 
+    width: 90vw;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  #toggle {
+    height: 0vh;
+    width: 0vw;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+  }
+  
+  
+  #tilesView {
+    min-height: 75vh;
+    width: 100vw;
+    background: rgb(236,236,236);
+    background: linear-gradient(111deg, rgba(246,210,106,1) 0%, rgba(255,159,0,1) 52%, rgba(251,197,100,1) 100%);
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #galleryView {
+    height: 90vh;
+    width: 100vw;
+    background: rgb(236,236,236);
+    /*background: linear-gradient(111deg, rgba(246,210,106,1) 0%, rgba(255,159,0,1) 52%, rgba(251,197,100,1) 100%);
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #outer3 {
+    width: 0px;
+    height: 0px;
+    background-color: #ff7f95;
+    margin: 0px auto;
+    border-radius: 3px;
+    border: 0px solid #ff7f95;
+    transition: all 0.5s;
+  }
+  
+  #slider3 {
+    height: 0px;
+    width: 0px;
+    background-color: #f44d6a;
+    border-radius: 3px;  
+    transition: all 0.5s;
+  }
+  
+  #slider3.active {
+    -webkit-transform: translatex(0px);
+    -ms-transform: translatex(0px);
+    -o-transform: translatex(0px);
+    transform: translatex(0px);
+    transition: all 0.5s;
+    background-color: #f44d6a;
+}
+  #outer3.outerActive {
+    background-color: white;
+    border: 2px solid white;
+    transition: all 0.5s;
+  }
+  
+  #textBox {
+    height: 25vh;
+    width: 100vw;
+    background: transparent;
+    /*background: linear-gradient(111deg, rgba(246,210,106,1) 0%, rgba(255,159,0,1) 52%, rgba(251,197,100,1) 100%);
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #recipeText {
+    height:225px;
+    width: 425px;
+    border-radius: 5px;
+    border: 2px solid #f44d6a;
+    background-color: orange;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 3;
+    transition: all 0.5s;  
+    justify-content: center;
+    
+  }
+  
+
+  #mainView {
+    height: 45vh;
+    width: 55vw;  
+    border-radius: 5px;
+    background-color: #ececec;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 3;
+    transition: all 0.5s;  
+  }
+  
+  #mainView:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;   
+  }
+  
+  #leftView {
+    height: 45vh;
+    width: 17.5vw;
+    opacity: 0.5;
+    border-radius: 5px;
+    transform: skewy(5deg);
+    transform-origin: top right;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;  
+  }
+  
+  #leftView:hover {
+    opacity: 1;
+    transition: all 0.5s;
+  }
+  
+  #rightView {
+    height: 45vh;
+    width: 17.5vw;
+    opacity: 0.5;
+    border-radius: 5px;
+    transform: skewy(-5deg);
+    transform-origin: top left;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transition: all 0.5s;
+  }
+  
+  #rightView:hover {
+    opacity: 1;
+    transition: all 1s;
+  }
+  
+  .navBtns {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    opacity: 0.8;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .navBtns:hover {
+    opacity: 1;
+    transition: all 0.5s;
+    background-color: #ececec;
+  }
+  
+  #navLeft {
+    left: 50px;
+  }
+  
+  #navRight {
+    right: 50px;
+  }
+  
+  #linkTag { 
+    cursor: pointer;
+    z-index: 3;
+    box-sizing: border-box;
+  }
