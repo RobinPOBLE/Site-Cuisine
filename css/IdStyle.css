@@ -45,24 +45,73 @@ a:active {
 
   @media screen and (orientation: portrait) {
     #baratin {
-      width: 100%;
+      width: 90%;
       align-self: center;
       justify-content: center;
       font-size: medium;
+      margin: auto;
     }
 
     #baratinContainer {
       width: 100vw;
-      height: 300px;
       align-items: center;
       margin: auto;
       padding-bottom: 5vh;
     }
   }
 
+/*
+  CSS Pour les valeurs des ingrédients
+*/
 
+.minus_button {
+  width: 3vw;
+  height: 3vh;
+  display: inline-flex;
+}
 
+.plus_button {
+  width: 3vw;
+  height: 3vh;
+  display: inline-flex;
+}
 
+.ingredients_button {
+  width: 3vw;
+  height: 3vh;
+  display: inline-flex;
+}
+
+.Ingredients_list {
+  display: flex;
+}
+
+.Ingredient_tile {
+  width: 10%;
+  margin: 10px;
+  text-align: center;
+}
+
+.Image_container {
+  height: 10vh;
+}
+
+.Ingredient_tile_content {
+  width: 100%;
+  margin-top: 5px;
+
+}
+
+.Ingredient_image {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.name {
+  width: 100%;
+}
  
 
 

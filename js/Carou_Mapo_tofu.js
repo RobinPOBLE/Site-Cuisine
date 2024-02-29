@@ -1,3 +1,7 @@
+/*
+    Nouveau js pour les chemins des images
+*/
+
 document.getElementById("outer3").addEventListener("click", toggleState3);
     
 function toggleState3() {
@@ -33,9 +37,9 @@ function toggleState3() {
 
 
 let imgObject = [
-  ['images/Sushi.jpg',"Sushi délicieux trop baka UwU"],
-  ['images/MapoTofu.jpg',"Mapo Tofu qui pique de ouf"],
-  ['images/CoteDeBoeuf.jpg',"Côte de Boeuf pour les vrai HOMMES"],
+  ['../../images/Mapo_Tofu/MapoTofu.jpg',""],
+  ['../../images/Mapo_Tofu/Mapo_Tofu2.webp',""],
+  ['../../images/Mapo_Tofu/Mapo_Tofu3.webp',""],
 ];
 
 
@@ -47,15 +51,19 @@ function loadGallery() {
 
   let mainView = document.getElementById("mainView");
   mainView.style.background = "url(" + imgObject[mainImg][0] + ")";
-  mainView.style.backgroundSize = "cover";
+  mainView.style.backgroundSize = "contain";
+  mainView.style.backgroundRepeat = "no-repeat";
+  mainView.style.backgroundPosition = "center";
 
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg][0] + ")";
   leftView.style.backgroundSize = "cover";
+  leftView.style.backgroundPosition = "center";
   
   let rightView = document.getElementById("rightView");
   rightView.style.background = "url(" + imgObject[nextImg][0] + ")";
-  leftView.style.backgroundSize = "cover";
+  rightView.style.backgroundSize = "cover";
+  rightView.style.backgroundPosition = "center";
   
   let linkTag = document.getElementById("linkTag")
   linkTag.href = imgObject[mainImg][0];

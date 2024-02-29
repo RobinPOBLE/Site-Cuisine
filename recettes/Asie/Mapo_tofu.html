@@ -3,16 +3,16 @@
 
 <head>
 
-        <link rel="stylesheet" href="./css/normalize.css">
-        <link rel="stylesheet" href="./css/IdStyle.css">
-        <link rel="stylesheet" href="./css/Carrousel.css">
-        <link rel="stylesheet" href="./css/Menu.css">
-        <link rel="stylesheet" href="./css/flexbox.css">
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/IdStyle.css">
+        <link rel="stylesheet" href="../../css/Carrousel.css">
+        <link rel="stylesheet" href="../../css/Menu.css">
+        <link rel="stylesheet" href="../../css/flexbox.css">
         
 
 
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width ; initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <meta name="author" content="SERANGE Valentin/POBLE Robin" >
     <meta name="keywords" content="MIAM.html">
     <meta name="description" content="page Miamiton">
@@ -31,10 +31,10 @@
     <nav class="menu">
         <ul>
             <li>
-                <a href="index.html">Accueil</a>
+                <a href="../../index.html">Accueil</a>
             </li>
             <li class="deroulant">
-                <a href="./France.html">France</a>
+                <a href="../../France.html">France</a>
                 <ul class="sous">
                     <li>
                         <a href="index.html">Accueil</a>
@@ -42,10 +42,10 @@
                 </ul>
             </li>
             <li class="deroulant">
-                <a href="./Asie.html">Asie</a>
+                <a href="../../Asie.html">Asie</a>
                 <ul class="sous">
                     <li>
-                        <a href="index.html">Accueil</a>
+                        <a href="../../index.html">Accueil</a>
                     </li>
                 </ul>
             </li>
@@ -76,22 +76,52 @@
         </div>
     </div>
 
-    <script src="./js/carousel.js"></script>
+    <script src="../../js/Carou_Mapo_tofu.js"></script>
     <!--Fin carrousel-->
-    
-    <div id="containeflex">
-        <p>Plongez dans l'univers enivrant de la gastronomie française !
 
-            Des rues de Paris aux vignobles de Bordeaux, découvrez un monde de saveurs authentiques et de délices raffinés. Des fromages exquis aux pâtisseries décadentes, chaque bouchée est une invitation à l'émerveillement. Explorez la France à travers sa cuisine et laissez-vous emporter par un festin pour les sens.
-        </p>
-        <a class="France" href="./France.html"><img src="./images/France.jpg" alt="Skill issue" width="20%" ></a>
-        <p>
-            Bienvenue dans le monde captivant de la cuisine asiatique !
+    <!--Tentative de liste d'ingrédients modulable-->
 
-Des saveurs exotiques des marchés aux mets raffinés des restaurants, chaque plat est une expérience sensorielle unique. Découvrez l'art des sushis japonais, les currys épicés de la Thaïlande et les délices variés de la Chine. Plongez dans un voyage gustatif où les arômes exotiques vous transportent à travers l'Asie, un festin pour les sens à chaque bouchée.
-        </p>
-        <a class="Asie" href="./Asie.html"><img src="./images/Asie.jpg" alt="Skill issue" width="20%" ></a>
+    <div class="Ingredients_container">
+        <div class="Ingredients_title"> 
+            <h1>Ingrédients</h1>
+            <hr>
+        </div>
+        <div class="Ingredients_main">
+            <div class="Ingredients_button_container">
+                <div class="Ingredients_button_whole">
+                    <span class="minus"><input class="minus_button" type="button" value="-"></span>
+                    <span class="quantity"><input class="ingredients_button" value="3" min="1" max="50"> personne(s) </span>
+                    <span class="plus"><input class="plus_button" type="button" value="+"></span>
+                </div>
+            </div>
+            <div class="Ingredients_list">
+                <div class="Ingredient_tile" id="Piments">
+                    <div class="Image_container">
+                        <img class="Ingredient_image" src="../../images/ingredients/Piments.jpg" alt="Skill Issue">
+                    </div>
+                    <div class="Ingredient_tile_content" data-IngredientCount="1">
+                        <span class="count">1</span>
+                        <span class="name">Piments</span>
+                    </div>
+                </div>
+                <div class="Ingredient_tile" id="Piments">
+                    <div class="Image_container">
+                        <img class="Ingredient_image" src="../../images/ingredients/Gingembre.jpg" alt="Skill Issue">
+                    </div>
+                    <div class="Ingredient_tile_content" data-IngredientCount="1">
+                        <span class="count">1</span>
+                        <span class="name">Gingembre</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
     </div>
+    <script src="../../js/ingredients.js"></script>
+    
+    
 
     <article>
         <div id="baratinContainer">
