@@ -17,7 +17,6 @@ loadNumbers();
     décrémenter la valeur du input ou il y a le nombre de personnes
 */
 function decrease() {
-    console.log("decrease");
     let new_v = parseInt(v);
     if (v>1) {
         new_v=new_v-1;
@@ -31,7 +30,6 @@ function decrease() {
     incrémenter la valeur du input ou il y a le nombre de personnes
 */
 function increase() {
-    console.log("increase");
     let new_v = parseInt(v);
     if (v<50) {
         new_v=new_v+1;

@@ -8,8 +8,37 @@
     background-color: #ececec;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
+    font-weight: initial;
     
+  }
+
+  /*
+    CSS pour le titre de la recette traité a part
+  */
+
+  .Titre_recette {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10vh;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  /*
+    Taille de police pour le sous titre du site
+  */
+
+  .Sous_titre_site {
+    font-size: 25px;
   }
 
   /*
@@ -19,6 +48,7 @@
   a {
     text-decoration: none;
   }
+
 /*Effet d'activation les liens*/ 
 a:active {
   color: red;
@@ -59,6 +89,40 @@ a:active {
       padding-bottom: 5vh;
     }
   }
+
+
+/*
+  CSS Pour la préparation
+*/
+
+.Prep_and_image {
+  display: flex;
+  align-items: center;
+}
+
+.Prep_container {
+  width: 50%;
+}
+
+.Cook_container {
+  width:50%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  text-align: center;
+  font-size: large;
+}
+
+.Cook_image { 
+  width: 80%;
+  margin: auto;
+  object-fit: contain;
+}
+
+.Prep_step {
+  margin-bottom: 30px;
+}
 
 /*
   CSS Pour les valeurs des ingrédients
@@ -103,7 +167,7 @@ a:active {
 }
 
 .Ingredient_image {
-  width: 100%;
+  height: 100%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);

@@ -33,9 +33,9 @@ function toggleState3() {
 
 
 let imgObject = [
-  ['images/Sushi.jpg',"Sushi délicieux trop baka UwU"],
-  ['images/MapoTofu.jpg',"Mapo Tofu qui pique de ouf"],
-  ['images/CoteDeBoeuf.jpg',"Côte de Boeuf pour les vrai HOMMES"],
+  ['images/Sushi.jpg',"Sushi délicieux trop baka UwU","html/recettes/Asie/Mapo_tofu.html"],
+  ['images/MapoTofu.jpg',"Mapo Tofu qui pique de ouf","html/recettes/Asie/Mapo_tofu.html"],
+  ['images/CoteDeBoeuf.jpg',"Côte de Boeuf pour les vrai HOMMES","html/recettes/Asie/Mapo_tofu.html"],
 ];
 
 
@@ -58,7 +58,7 @@ function loadGallery() {
   leftView.style.backgroundSize = "cover";
   
   let linkTag = document.getElementById("linkTag")
-  linkTag.href = imgObject[mainImg][0];
+  linkTag.href = imgObject[mainImg][2];
 
   let mainText = document.getElementById("mainText");
   mainText.innerHTML=imgObject[mainImg][1];

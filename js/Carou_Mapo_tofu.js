@@ -37,9 +37,9 @@ function toggleState3() {
 
 
 let imgObject = [
-  ['../../images/Mapo_Tofu/MapoTofu.jpg',""],
-  ['../../images/Mapo_Tofu/Mapo_Tofu2.webp',""],
-  ['../../images/Mapo_Tofu/Mapo_Tofu3.webp',""],
+  ['../../../images/Mapo_Tofu/MapoTofu.jpg',""],
+  ['../../../images/Mapo_Tofu/Mapo_Tofu2.webp',""],
+  ['../../../images/Mapo_Tofu/Mapo_Tofu3.webp',""],
 ];
 
 
