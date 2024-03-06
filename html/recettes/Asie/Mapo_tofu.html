@@ -23,110 +23,167 @@
 
 <body>
     <header id="haut">
-        <h1>Miamiton UwU</h1>
-        <h2>Votre site de cuisine favori</h2>
+        <h1>Miamiton UwU <br>
+            <span class="Sous_titre_site">Votre site de cuisine favori</span>
+        </h1>
     </header>
     <main>
         
     <nav class="menu">
         <ul>
             <li>
-                <a href="../index.html">Accueil</a>
+                <a href="../../../index.html">Accueil</a>
             </li>
             <li class="deroulant">
-                <a href="../France.html">France</a>
+                <a href="../../../France.html">France</a>
                 <ul class="sous">
                     <li>
-                        <a href="../index.html">Accueil</a>
+                        <a href="../../../index.html">Accueil</a>
                     </li>
                 </ul>
             </li>
             <li class="deroulant">
-                <a href="../Asie.html">Asie</a>
+                <a href="../../../Asie.html">Asie</a>
                 <ul class="sous">
                     <li>
-                        <a href="../index.html">Accueil</a>
+                        <a href="../../../index.html">Accueil</a>
                     </li>
                 </ul>
             </li>
         </ul>
     </nav>
-    <!--Carrousel dynamique-->
-    <div id="container">
-        <div id="toggleContainer">
-            <label></label>
-            <div id="toggle">
-                <div id="outer3">
-                    <div id="slider3"></div>
+    <article>
+        <section>
+            <h2 class="Titre_recette">Mapo Tofu</h2>
+            <!--Carrousel dynamique-->
+            <div id="container">
+                <div id="toggleContainer">
+                    <label></label>
+                    <div id="toggle">
+                        <div id="outer3">
+                            <div id="slider3"></div>
+                        </div>
+                        <label></label>
+                    </div>
                 </div>
-                <label></label>
+                <div id="galleryView">
+                    <div id="galleryContainer">
+                        <div id="leftView"></div>
+                        <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+                        <a id="linkTag">
+                        <div id="mainView"></div>
+                        <div id="mainText"></div>
+                        </a>
+                        <div id="rightView"></div>
+                        <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="galleryView">
-            <div id="galleryContainer">
-                <div id="leftView"></div>
-                <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
-                <a id="linkTag">
-                <div id="mainView"></div>
-                <div id="mainText"></div>
-                </a>
-                <div id="rightView"></div>
-                <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+
+            <script src="../../../js/Carou_Mapo_tofu.js"></script>
+            <!--Fin carrousel-->
+        </section>
+
+        <!--Liste d'ingrédients modulable-->
+        <section>
+            <div class="Ingredients_container">
+                <div class="Ingredients_title"> 
+                    <h2>Ingrédients</h2>
+                    <hr>
+                </div>
+                <div class="Ingredients_main">
+                    <div class="Ingredients_button_container">
+                        <div class="Ingredients_button_whole">
+                            <span class="minus"><input class="minus_button" type="button" value="-"></span>
+                            <span class="quantity"><input class="ingredients_button" value="3" min="1" max="50"> personne(s) </span>
+                            <span class="plus"><input class="plus_button" type="button" value="+"></span>
+                        </div>
+                    </div>
+                    <div class="Ingredients_list">
+                        <div class="Ingredient_tile" id="Piments">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/Piments.jpg" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="1">
+                                <span class="count">1</span>
+                                <span class="name">Piments</span>
+                            </div>
+                        </div>
+                        <div class="Ingredient_tile" id="Piments">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/Gingembre.jpg" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="1">
+                                <span class="count">1</span>
+                                <span class="name">Gingembre</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-        </div>
-    </div>
-
-    <script src="../../js/Carou_Mapo_tofu.js"></script>
-    <!--Fin carrousel-->
-
-    <!--Tentative de liste d'ingrédients modulable-->
-
-    <div class="Ingredients_container">
-        <div class="Ingredients_title"> 
-            <h1>Ingrédients</h1>
+            <script src="../../../js/ingredients.js"></script>
+            <!-- Fin ingrédients -->
+        </section>
+        <div class="Prep_title">
+            <h2>Préparation</h2>
             <hr>
         </div>
-        <div class="Ingredients_main">
-            <div class="Ingredients_button_container">
-                <div class="Ingredients_button_whole">
-                    <span class="minus"><input class="minus_button" type="button" value="-"></span>
-                    <span class="quantity"><input class="ingredients_button" value="3" min="1" max="50"> personne(s) </span>
-                    <span class="plus"><input class="plus_button" type="button" value="+"></span>
-                </div>
+        <div class="Prep_and_image">
+            <div class="Prep_container">            
+                <section class="Prep_main">
+                    <div class="Prep_step">
+                        <h3>Etape 1</h3>
+                        <p>
+                            Coupez le porc, l'échalote, le gingembre et les piments en dés.
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 2</h3>                    
+                        <p>
+                            Versez l'huile dans la marmite pour la faire bouillir.
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 3</h3>                    
+                        <p>
+                            Grillez les dés du porc, de l'échalote, du gingembre et des piments.
+                            Une fois prêts, versez les morceaux dans un bol.
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 4</h3>
+                        <p>
+                            Ajoutez de l'eau et du tofu dans la marmite. 
+                            L'eau doit recouvrir tout le tofu.
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 5</h3>                    
+                        <p>
+                            Quand le tofu a cuit au bout de deux minutes, ajoutez la sauce de soja.
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 6</h3>
+                        <p>
+                            Versez tous les morceaux qu'il y a dans le bol dans la marmite.
+                        </p>
+                    </div>
+                </section>
             </div>
-            <div class="Ingredients_list">
-                <div class="Ingredient_tile" id="Piments">
-                    <div class="Image_container">
-                        <img class="Ingredient_image" src="../../images/ingredients/Piments.jpg" alt="Skill Issue">
-                    </div>
-                    <div class="Ingredient_tile_content" data-IngredientCount="1">
-                        <span class="count">1</span>
-                        <span class="name">Piments</span>
-                    </div>
-                </div>
-                <div class="Ingredient_tile" id="Piments">
-                    <div class="Image_container">
-                        <img class="Ingredient_image" src="../../images/ingredients/Gingembre.jpg" alt="Skill Issue">
-                    </div>
-                    <div class="Ingredient_tile_content" data-IngredientCount="1">
-                        <span class="count">1</span>
-                        <span class="name">Gingembre</span>
-                    </div>
-                </div>
-            </div>
-            
+            <figure class="Cook_container">
+                <img class="Cook_image" src="../../../images/Paul_bocuse.jpg" alt="Portrait de Paul Bocuse">
+                <figcaption><strong>Paul bocuse</strong></figcaption>
+            </figure>
         </div>
-
-
-    </div>
-    <script src="../../js/ingredients.js"></script>
-    
+    </article>
     
 
     <article>
         <div id="baratinContainer">
             <div id="baratin">
-                <h1>A Propos de nous</h1>
+                <h2>A Propos de nous</h2>
                 <p>Ce site cherche a promouvoir la paix dans le monde par le biais de la cuisine. </p>
                 <p>En effet en mélangeant les culture de divers continent, Miamiton espère rapprocher les peuples
                 et leur permettre d'oublier leur différents. </p>
