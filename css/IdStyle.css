@@ -8,7 +8,6 @@
     background-color: #ececec;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
     
   }
 
@@ -23,42 +22,6 @@
 a:active {
   color: red;
 }
-/*
-  Media Queries pour le texte en dessous du caroussel
-*/
-  @media screen and (orientation: landscape) {
-    #baratin {
-      width: 100%;
-      align-self: center;
-      justify-content: center;
-      font-size: large;
-    }
-
-    #baratinContainer {
-      width: 50vw;
-      height: 300px;
-      align-items: center;
-      margin: auto;
-      padding-bottom: 5vh;
-    }
-  }
-
-  @media screen and (orientation: portrait) {
-    #baratin {
-      width: 90%;
-      align-self: center;
-      justify-content: center;
-      font-size: medium;
-      margin: auto;
-    }
-
-    #baratinContainer {
-      width: 100vw;
-      align-items: center;
-      margin: auto;
-      padding-bottom: 5vh;
-    }
-  }
 
 /*
   CSS Pour les valeurs des ingrédients

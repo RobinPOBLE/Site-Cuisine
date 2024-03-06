@@ -1,0 +1,37 @@
+#containerflex1{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+#containerflex1 > p{
+    width: 400px;
+}
+#containerflex1 > a{
+    width: 300px;
+}
+#containerflex1 a >img{
+    width: 100%;
+}
+
+#containerflex2{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3px;
+}
+
+#containerflex2 > p{
+    width: 400px;
+}
+#containerflex2 > a{
+    width: 300px;
+    
+}
+#containerflex2 a >img{
+    width: 100%;
+}
