@@ -3,14 +3,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 3px;
+    flex-wrap: wrap-reverse;
 }
 #containerflex1 > p{
-    width: 400px;
+    width: 700px;
+    padding: 5px;
+    margin-left: 4%;
+
+
 }
 #containerflex1 > a{
-    width: 300px;
+    width: 400px;
+    padding: 5px;
+
 }
 #containerflex1 a >img{
     width: 100%;
@@ -22,14 +27,18 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 3px;
 }
 
 #containerflex2 > p{
-    width: 400px;
+    width: 700px;
+    padding: 5px;
+    margin-right: 7%;
+
 }
 #containerflex2 > a{
-    width: 300px;
+    width: 400px;
+    padding: 5px;
+
     
 }
 #containerflex2 a >img{

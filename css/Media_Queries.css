@@ -40,11 +40,18 @@
 */
 
 @media screen and (orientation: portrait) {
-  #containerflex1 > p{
+  *{
     font-family: Arial, Helvetica, sans-serif;
+  }
+  #containerflex1 > p{
     order:1;
-    
-}
+  }
+  #containerflex2 > p{
+    order:1;
+  }
+  #containerflex2 > a{
+    order:2;
+  }
 }
 
 /*
