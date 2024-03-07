@@ -1,7 +1,46 @@
-.containerflex {
-    display: flex;
+#containerflex1{
+    display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+#containerflex1 > p{
+    width: 700px;
+    padding: 5px;
+    margin-left: 4%;
+
+
+}
+#containerflex1 > a{
+    width: 400px;
+    padding: 5px;
+
+}
+#containerflex1 a >img{
+    width: 100%;
+}
+
+#containerflex2{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#containerflex2 > p{
+    width: 700px;
+    padding: 5px;
+    margin-right: 7%;
+
+}
+#containerflex2 > a{
+    width: 400px;
+    padding: 5px;
+
+    
+}
+#containerflex2 a >img{
+    width: 100%;
 }

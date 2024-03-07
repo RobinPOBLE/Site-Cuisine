@@ -1,15 +1,55 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: initial;
 
+}
 
-*, html, body {
+body {   
+    background-color: #ececec; 
+  }
 
-    padding: 0;
-    margin: 0;
-    color: #070707;
-    background-color: #ececec;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+  header{
+    background-color: black;
+    color:white;
+    margin:0;
+  }
+
+  /*
+    CSS pour le titre de la recette traité a part
+  */
+
+  .Titre_recette {
     font-weight: bold;
-    
+    text-align: center;
+    margin-top: 10vh;
+  }
+  h1{
+    margin:0;
+    text-align: center;
+  }
+  h1 #titre{
+    display:bloc;
+  }
+  h2 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  /*
+    Taille de police pour le sous titre du site
+  */
+
+  .Sous_titre_site {
+    font-size: 25px;
   }
 
   /*
@@ -18,51 +58,100 @@
 
   a {
     text-decoration: none;
+    color:black;
   }
+
 /*Effet d'activation les liens*/ 
 a:active {
   color: red;
 }
+
+
 /*
-  Media Queries pour le texte en dessous du caroussel
+  CSS Pour la préparation
 */
-  @media screen and (orientation: landscape) {
-    #baratin {
-      width: 100%;
-      align-self: center;
-      justify-content: center;
-      font-size: large;
-    }
 
-    #baratinContainer {
-      width: 50vw;
-      height: 300px;
-      align-items: center;
-      margin: auto;
-      padding-bottom: 5vh;
-    }
-  }
+.Prep_and_image {
+  display: flex;
+  align-items: center;
+}
 
-  @media screen and (orientation: portrait) {
-    #baratin {
-      width: 100%;
-      align-self: center;
-      justify-content: center;
-      font-size: medium;
-    }
+.Prep_container {
+  width: 50%;
+}
 
-    #baratinContainer {
-      width: 100vw;
-      height: 300px;
-      align-items: center;
-      margin: auto;
-      padding-bottom: 5vh;
-    }
-  }
+.Cook_container {
+  width:50%;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+  text-align: center;
+  font-size: large;
+}
 
+.Cook_image { 
+  width: 80%;
+  margin: auto;
+  object-fit: contain;
+}
 
+.Prep_step {
+  margin-bottom: 30px;
+}
 
+/*
+  CSS Pour les valeurs des ingrédients
+*/
 
+.minus_button {
+  width: 3vw;
+  height: 3vh;
+  display: inline-flex;
+}
+
+.plus_button {
+  width: 3vw;
+  height: 3vh;
+  display: inline-flex;
+}
+
+.ingredients_button {
+  width: 3vw;
+  height: 3vh;
+  display: inline-flex;
+}
+
+.Ingredients_list {
+  display: flex;
+}
+
+.Ingredient_tile {
+  width: 10%;
+  margin: 10px;
+  text-align: center;
+}
+
+.Image_container {
+  height: 10vh;
+}
+
+.Ingredient_tile_content {
+  width: 100%;
+  margin-top: 5px;
+
+}
+
+.Ingredient_image {
+  height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.name {
+  width: 100%;
+}
  
 
 

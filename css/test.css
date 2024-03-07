@@ -1,5 +1,9 @@
 /*Code css menu déroulant"*/
 .menu{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     width:100%;
     margin:0 auto;
     position:sticky;
