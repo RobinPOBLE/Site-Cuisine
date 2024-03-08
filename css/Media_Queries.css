@@ -11,10 +11,10 @@
 
     #baratinContainer {
       width: 50vw;
-      height: 300px;
+      height: 250px;
       align-items: center;
       margin: auto;
-      padding-bottom: 5vh;
+
     }
   }
 
@@ -46,11 +46,18 @@
   #containerflex1 > p{
     order:1;
   }
+  #containerflex1 > a{
+    width:300px;
+
+
+  }
   #containerflex2 > p{
     order:1;
   }
   #containerflex2 > a{
     order:2;
+    width:300px;
+
   }
 }
 

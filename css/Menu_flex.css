@@ -1,0 +1,61 @@
+
+/*Menu deroulant fait en flexbox*/
+
+
+.menu{
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    margin-bottom: 60px;
+    font-size: 20px;
+    
+}
+
+.menu > ul{
+    list-style-type: none;
+    display: flex;
+    margin-inline: 10%;
+
+
+}
+
+.menu ul li{
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+}
+
+.menu a{
+    display: block;
+    padding: 10px 0px;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover{
+    color: orange;
+    transform: scale(1.3);
+    transition: all 0.5s ease;
+}
+
+.sous{
+    display: none;
+    list-style-type: none;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.menu ul li:hover > .sous{
+    display: flex;
+    flex-direction: column;
+}
+
+.sous a{
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+
+

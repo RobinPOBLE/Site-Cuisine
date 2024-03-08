@@ -12,9 +12,9 @@ body {
   }
 
   header{
-    background-color: black;
+    background-color: #f0745b;
     color:white;
-    margin:0;
+    padding: 15px;
   }
 
   /*
@@ -34,6 +34,8 @@ body {
     display:bloc;
   }
   h2 {
+    text-align: center;
+
     margin-bottom: 15px;
     font-weight: bold;
   }
@@ -44,6 +46,20 @@ body {
     font-size: 30px;
   }
 
+  #Intro{
+    font-size: 20px;
+    margin-inline: 10%;
+    text-align: justify;
+  }
+  
+  /*Gestion du padding pour rendre le texte plus aherer(sous la section imagé)*/
+  .Gros_paver{
+    padding:15px;
+  }
+
+  #baratinContainer{
+    padding-top:40px;
+  }
   /*
     Taille de police pour le sous titre du site
   */
@@ -161,6 +177,9 @@ a:active {
  footer {
     position: absolute;  
     width: 100%;
+    background-color: #f0745b;
+
+
   }
 /*Gestion du text pour le footer*/
 footer p{

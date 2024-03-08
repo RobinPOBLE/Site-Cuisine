@@ -9,11 +9,12 @@
     width: 700px;
     padding: 5px;
     margin-left: 4%;
+    font-size: larger;
 
 
 }
 #containerflex1 > a{
-    width: 400px;
+    width: 500px;
     padding: 5px;
 
 }
@@ -27,16 +28,19 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 #containerflex2 > p{
     width: 700px;
     padding: 5px;
     margin-right: 7%;
+    font-size: larger;
+
 
 }
 #containerflex2 > a{
-    width: 400px;
+    width: 500px;
     padding: 5px;
 
     
