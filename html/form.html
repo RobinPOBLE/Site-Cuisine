@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/Carrousel.css">
         <link rel="stylesheet" href="../css/Menu.css">
         <link rel="stylesheet" href="../css/flexbox.css">
+        <link rel="stylesheet" href="../css/form.css">
         
 
 
@@ -55,32 +56,33 @@
     <form id="Form_body">
         <div id="Lastname_container">
             <p>Nom : </p>
-            <input type="text" placeholder="Last Name" value="" required>
+            <input id="Last Name" class="initial" type="text" placeholder="Last Name" value="">
         </div>
         <div id="Firstname_container">
             <p>Prénom :</p>
-            <input type="text" placeholder="First Name" value="" required>
+            <input id="First Name" class="initial" type="text" placeholder="First Name" value="">
         </div>
         <div id="Date_container">
             <p>Date :</p>
-            <input id="Date" type="text" placeholder="Date" value="">
+            <input id="Date" class="initial" type="text" placeholder="Date : dd/mm/yyyy" value="">
         </div>
         <div id="Username_container">
             <p>Nom d'utilisateur :</p>
-            <input id="Username" type="text" placeholder="xX_PaulB0cuseDu63_Xx" value="" required>
+            <input id="Username" class="initial" type="text" placeholder="xX_PaulB0cuseDu63_Xx" value="">
         </div>
         <div id="Password_container">
             <p>Mot de Passe :</p>
-            <input type="password" placeholder="Password" value="" required>
+            <input id="Password" class="initial" type="password" placeholder="Password" value="">
         </div>
         <div id="Email_container">
             <p>Email :</p>
-            <input id="Email" type="text" placeholder="paulbocuse@example.com" value="" required>
+            <input id="Email" class="initial" type="text" placeholder="paulbocuse@example.com" value="">
         </div>
         <div id="Submit_container">
-            <input type="submit" value="Valider">
+            <input class="initial" type="submit" value="Valider">
         </div>
     </form>
+    <script src="../js/Form.js"></script>
 
     <footer>
         <a class="top" href="#haut">Haut</a>

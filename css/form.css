@@ -1,0 +1,16 @@
+.invalid {
+    border-color: red;
+    border-width: 3px;
+    margin-bottom: 0.7vh;
+}
+
+.valid {
+    margin-bottom: 0.7vh;
+    border-color: green;
+    border-width: 3px;
+
+}
+
+.initial {
+    margin-bottom: 0.7vh;
+}
