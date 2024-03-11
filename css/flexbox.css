@@ -1,5 +1,7 @@
 #containerflex1{
     display:flex;
+    position: relative;
+    z-index: 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -24,6 +26,8 @@
 
 #containerflex2{
     display:flex;
+    position: relative;
+    z-index: 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
