@@ -10,8 +10,7 @@
     }
 
     #baratinContainer {
-      width: 50vw;
-      height: 250px;
+      width: 80vw;
       align-items: center;
       margin: auto;
 
@@ -28,7 +27,7 @@
     }
 
     #baratinContainer {
-      width: 100vw;
+      width: 50vw;
       align-items: center;
       margin: auto;
       padding-bottom: 5vh;

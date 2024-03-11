@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: initial;
 
 }
 
@@ -12,9 +11,16 @@ body {
   }
 
   header{
+    position: sticky;
     background-color: #f0745b;
     color:white;
     padding: 15px;
+
+  }
+
+  #Image_profil{
+    width:70px;
+    float:right;
   }
 
   /*
@@ -52,13 +58,11 @@ body {
     text-align: justify;
   }
   
-  /*Gestion du padding pour rendre le texte plus aherer(sous la section imagé)*/
-  .Gros_paver{
-    padding:15px;
-  }
 
   #baratinContainer{
     padding-top:40px;
+    font-size: 12px;
+    text-align: center;
   }
   /*
     Taille de police pour le sous titre du site
@@ -177,12 +181,14 @@ a:active {
  footer {
     position: absolute;  
     width: 100%;
+    margin-top: 50px;
     background-color: #f0745b;
 
 
   }
 /*Gestion du text pour le footer*/
-footer p{
+#Copyright{
+  margin-top: 20px;
   font-size: 12px;
   font-style: italic;
   text-align: center;
@@ -191,6 +197,10 @@ footer p{
 
 /*Ancre retour haut de page*/
 .top{
+  position: sticky;
   float:right;
   font-size: 14px;
+}
+#fleche_haut{
+  width:50px;
 }

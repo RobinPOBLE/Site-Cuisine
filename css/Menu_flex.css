@@ -8,15 +8,15 @@
     position: sticky;
     margin-bottom: 60px;
     font-size: 20px;
-    
+    position: sticky;
+
 }
 
 .menu > ul{
     list-style-type: none;
     display: flex;
-    margin-inline: 10%;
-
-
+    margin-right: 15%;
+    margin-left: 10%;
 }
 
 .menu ul li{
