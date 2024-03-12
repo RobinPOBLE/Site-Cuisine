@@ -39,6 +39,7 @@
     display: none;
     list-style-type: none;
     background-color: white;
+    box-shadow: none;
     position: absolute;
     width: 100%;
     z-index: 1000;
