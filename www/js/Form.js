@@ -1,11 +1,11 @@
 const valid=false;
-const form = document.getElementById("Form_body");
-const date = document.getElementById("Date");
-const username = document.getElementById("Username");
-const email = document.getElementById("Email");
-const password = document.getElementById("Password");
-const surname = document.getElementById("Last Name");
-const firstname = document.getElementById("First Name");
+const form = document.getElementById("Register_body");
+const date = document.getElementById("birthdate");
+const username = document.getElementById("username");
+const email = document.getElementById("useremail");
+const password = document.getElementById("userpwd");
+const surname = document.getElementById("lastname");
+const firstname = document.getElementById("firstname");
 
 date.addEventListener("input", checkDate);
 username.addEventListener("input", checkUsername);
@@ -152,44 +152,49 @@ function checkPassword() {
 
 function checkAll(event) {
 
-    event.preventDefault();
-
     let hasError = false;
     let str ="";
     if (!checkSurname()) {
         str+="Entrez un Nom !";
+        hasError = true;
     }
     if (!checkName()) {
         if (hasError) {
             str+="\n";
         }
         str+="Entrez un prénom !";
+        hasError = true;
     }
     if (!checkDate()) {
         if (hasError) {
             str+="\n";
         }
         str+="Entrez une date valide !";
+        hasError = true;
     }
     if (!checkUsername()) {
         if (hasError) {
             str+="\n";
         }
-        str+="Entrez un no; d'utilisateur correct !";
+        str+="Entrez un nom d'utilisateur correct !";
+        hasError = true;
     }
     if (!checkEmail()) {
         if (hasError) {
             str+="\n";
         }
         str+="Entrez un email correct !";
+        hasError = true;
     }
     if (!checkPassword()) {
         if (hasError) {
             str+="\n";
         }
         str+="Entrez un mot de passe correct !";
+        hasError = true;
     }
     if (hasError) {
+        event.preventDefault();
         alert(str);
     }
 

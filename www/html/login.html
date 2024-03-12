@@ -34,6 +34,12 @@
 <header id="haut">
     <a href="./form.html"><img id="Image_profil" src="../images/icone_profil.jpg" alt="Skill issue"></a>
     <h1><span id="titre">Miamiton</span> <br>Votre site de cuisine favori</h1>
+    
+</header>
+<body>
+
+    <main>
+        
     <nav class="menu">
         <ul>
             <li>
@@ -51,45 +57,27 @@
                 <a href="./pays/Asie.html">Asie</a>
                 <ul class="sous">
                     <li>
-                        <a href="./recettes/Asie/Mapo_tofu.html">Tofu</a>
+                        <a href="../index.html">Accueil</a>
                     </li>
                 </ul>
             </li>
         </ul>
     </nav>
-</header>
-<body>
-
-    <main>
-        
     
-    <div id="fond_form">
-    <h2>Inscription à Miamiton</h2>
-    <form id="Form_body">
-        <div id="Lastname_container">
-            <input name="lastname" id="lastname" class="initial" type="text" placeholder="Last Name" value="">
-        </div>
-        <div id="Firstname_container">
-            <input name="firstname" id="firstname" class="initial" type="text" placeholder="First Name" value="">
-        </div>
-        <div id="Date_container">
-            <input name="birthdate" id="birthdate" class="initial" type="text" placeholder="Date : dd/mm/yyyy" value="">
-        </div>
-        <div id="Username_container">
+    <div class="fond_form">
+    <form class="Form_body" id="Login_body" >
+        <div class="Username_container">
             <input name="username" id="username" class="initial" type="text" placeholder="Username :xX_PaulB0cuseDu63_Xx" value="">
         </div>
-        <div id="Password_container">
+        <div class="Password_container">
             <input name="userpwd" id="userpwd" class="initial" type="password" placeholder="Password" value="">
-        </div>
-        <div id="Email_container">
-            <input name="useremail" id="useremail" class="initial" type="text" placeholder="Email: paulbocuse@example.com" value="">
-        </div>
         <div class="Submit_container">
             <input class="initial" type="submit" value="Valider">
         </div>
+        <div id="error_log"></div>
     </form>
     </div>
-    <script src="../js/Form.js"></script>
+    <script src="../js/Login.js"></script>
 
    
 </body>
