@@ -3,7 +3,7 @@
 const top=document.querySelector('.top');
 
 
-top.addEventListener('click', () => {
+top.addEventListener("click", () => {
     window.scrollTo({
         top:0,
         left:0,

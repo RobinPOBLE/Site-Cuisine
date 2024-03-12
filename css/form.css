@@ -1,9 +1,35 @@
-body{
+/*Gestion de l'esthetique du formulaire*/
+
+#fond_form{
     background-image: url("../images/fond_formulaire.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+    margin-inline: 15%;
+    
 }
 
+#Form_body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:150px;
+    padding-right:15%;
+    
+}
+#Submit_container{
+    padding-left: 5%;
+}
+
+div{
+    padding-top: 10px;;
+}
+input{
+    padding:10px;
+    width: 150%;
+}
+
+/*Effet de validation pour le contenu des cases*/
 .invalid {
     border-color: red;
     border-width: 3px;
@@ -21,4 +47,7 @@ body{
     margin-bottom: 0.7vh;
 }
 
-
+/*reglage particulier pour le margin du menu sur le formulaire*/
+.menu{
+    margin-bottom: 30px;
+}
