@@ -51,7 +51,6 @@ function checkDate() {
     let cur = new Date();
     let value2='';
     let value1 = date.value;
-    console.log("value 2 init :",value2);
     if (value1.length>0) {
         let value2 = value1.slice(3,5)+'/'+value1.slice(0,2)+'/'+value1.slice(-4);
         let curY = cur.getFullYear();
@@ -63,17 +62,6 @@ function checkDate() {
         let valM = value.getMonth();
         let valD = value.getDate();
 
-        console.log("value 1 :",value1);
-        console.log("value 2 :",value2);
-        console.log("value1.slice(3,4) :",value1.slice(3,4));
-        console.log("value1.slice(0,2) :",value1.slice(0,2));
-        console.log("value1.slice(-4) :",value1.slice(-4));
-        console.log("value :",value);
-        console.log("valD :",valD);
-        console.log("valM :",valM);
-        console.log("valY :",valY);
-        console.log("valY/4 :",valY/4);
-
         if (value == "Invalid Date" || valD<0 || valD>31 || valY>curY || valY<curY-150 || (valD>30 && valM%2!=0) ||
         (valY==curY && valM>curM) || (valY==curY && valM==curM && valD>curD) ||
         (valD>29 && valM==1) || (value1.slice(0,2)=="29" && value1.slice(3,5)=="02" && (valY%4!=0 || (valY%100==0 && valY%400!=0)))) {
@@ -82,6 +70,9 @@ function checkDate() {
         else {
             isOkay=true;
         }
+    }
+    else if (value.length==0) {
+        isOkay=true;
     }
     if (!isOkay) {
         date.className = "invalid";
@@ -194,8 +185,8 @@ function checkAll(event) {
         hasError = true;
     }
     if (hasError) {
-        event.preventDefault();
         alert(str);
+        event.preventDefault();
     }
 
 }

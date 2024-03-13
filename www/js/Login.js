@@ -48,33 +48,28 @@ function checkPassword() {
 }
 
 function checkAll(event) {
+    event.preventDefault();
     let req = new XMLHttpRequest();
-    let hasError = false;
-    let str ="username="+username.value+"&userpwd="+password.value;
-    req.open("POST", "../htbin/login.py",true)
-    req.send(str)
-    console.log(str)
-    console.log(req.responseText)
-    console.log(req.readyState)
-    console.log(req.status)
-    if (req.responseText=='Le nom d\'utilisateur ne doit pas être vide.' || req.responseText=='Le mot de pass ne doit pas être vide.' || req.responseText=='Le nom d\'utilisateur et le mot de pass sont invalides.' ) {
-        event.preventDefault();
-        if (this.readyState==4 && this.status==200) {
-            document.getElementById(error_log).innerHTML = req.responseText;
-        }
-    }
-    else {
-        event.preventDefault();
-        req.onreadystatechange = function() {
-            if (this.readyState==4 && this.status==200) {
-                document.getElementById("error_log").innerHTML = req.responseText;
-            }
-            else {
-                console.log(this.readyState);
-                console.log(this.status);
+    let str ="username="+encodeURIComponent(username.value)+"&userpwd="+encodeURIComponent(password.value);
+    req.open("POST", "../htbin/login.py", true);
+    req.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    
+    req.onreadystatechange = function() {
+        if (req.readyState == 4) {
+            if (req.status == 200) {
+                console.log(req.responseText)
+                if (req.responseText.includes('Le nom d\'utilisateur ne doit pas être vide.') || req.responseText.includes('Le mot de pass ne doit pas être vide.') || req.responseText.includes('Le nom d\'utilisateur et le mot de pass sont invalides.')) {
+                    document.getElementById("error_log").innerHTML = req.responseText;
+                } else {
+                    // Success case handling
+                    document.getElementById("error_log").innerHTML = req.responseText;
+                }
+            } else {
+                // Handle request error
+                console.log("Error:", req.status);
             }
         }
-        
-    }
-
+    };
+    req.send(str);
 }
+

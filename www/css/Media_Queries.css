@@ -59,7 +59,7 @@
 
   }
   header > h1 {
-    font-size: 6vw;
+    font-size: 5vw;
 }
 
 }
@@ -74,3 +74,19 @@
 }
 
 
+/*Media queres bouton connection*/
+
+@media screen and (max-width:700px) {
+  #modal1{
+    width: 100%;
+    right: 0;
+    top:90px;
+  }
+  aside h2{
+    font-size: 6vw;
+
+
+  }
+
+
+}
