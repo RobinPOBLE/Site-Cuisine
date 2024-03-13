@@ -33,6 +33,8 @@
     color: orange;
     transform: scale(1.3);
     transition: all 0.5s ease;
+    border-bottom: none;
+
 }
 
 .sous{
@@ -42,7 +44,7 @@
     box-shadow: none;
     position: absolute;
     width: 100%;
-    z-index: 1000;
+    z-index: 5;
 }
 .menu ul li:hover > .sous{
     display: flex;
@@ -51,10 +53,6 @@
 
 .sous a{
     border-bottom: none;
-}
-.sous a:hover{
-    border-bottom: none;
-    background-color: RGBa(200,200,200,0.1);
 }
 
 

@@ -1,6 +1,6 @@
 /*Gestion de l'esthetique du formulaire*/
 
-.fond_form{
+#fond_form{
     background-image: url("../images/fond_formulaire.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +9,7 @@
     padding-bottom: 5%;
 }
 
-.Form_body{
+#Form_body{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@
 
     
 }
-.Submit_container{
+#Submit_container{
     padding-left: 5%;
 }
 
