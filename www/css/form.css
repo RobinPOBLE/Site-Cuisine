@@ -18,8 +18,13 @@
 
     
 }
+
 .Submit_container{
     padding-left: 5%;
+}
+
+#error_log {
+    background-color: white;
 }
 
 div{
