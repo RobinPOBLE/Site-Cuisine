@@ -63,41 +63,19 @@
     <main>
         
     
-    <div class="fond_form">
-    <h2>Inscription à Miamiton</h2>
-    <form class="Form_body" id="Register_body" action="../htbin/register.py" method="POST">
-        <div id="Lastname_container">
-            <input name="lastname" id="lastname" class="initial" type="text" placeholder="Last Name" value="">
-            <span id="Lastname_log"></span>
-        </div>
-        <div id="Firstname_container">
-            <input name="firstname" id="firstname" class="initial" type="text" placeholder="First Name" value="">
-            <span id="Firstname_log"></span>
-        </div>
-        <div id="Date_container">
-            <input name="birthdate" id="birthdate" class="initial" type="text" placeholder="Date : dd/mm/yyyy" value="">
-            <span id="Date_log"></span>
-        </div>
-        <div id="Username_container">
-            <input name="username" id="username" class="initial" type="text" placeholder="Username :xX_PaulB0cuseDu63_Xx" value="">
-            <span id="Username_log"></span>
-        </div>
-        <div id="Password_container">
-            <input name="userpwd" id="userpwd" class="initial" type="password" placeholder="Password" value="">
-            <span id="Password_log"></span>
-        </div>
-        <div id="Email_container">
-            <input name="useremail" id="useremail" class="initial" type="text" placeholder="Email: paulbocuse@example.com" value="">
-            <span id="Email_log"></span>
-        </div>
-        <div class="Submit_container">
-            <input class="initial" type="submit" value="Valider">
-        </div>
-    </form>
-    </div>
-    <script src="../js/Form.js"></script>
+    <div id="Chat_container">
+        <div id="Chat_list">
 
-   
+        </div>
+        <div id="Chat_send">
+            <form id="Message_send">
+                <input id="Type_box" type="text" name="type_box" value="">
+            </form>
+            <span id="Message_error"></span>
+        </div>
+    </div>
+
+<script src="../js/Chat.js"></script>   
 </body>
 
 
