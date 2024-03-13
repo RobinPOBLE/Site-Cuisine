@@ -14,11 +14,16 @@ password.addEventListener("input", checkPassword);
 surname.addEventListener("input", checkSurname);
 firstname.addEventListener("input", checkName);
 
-form.addEventListener("submit",checkAll);
+form.addEventListener("submit",function(event) { 
+    checkAll(event);
+});
 
 function checkName() {
     let isOkay = false;
     let value = firstname.value;
+    if (value.length==0) {
+        return isOkay;
+    }
     if (value.length>0) {
         isOkay = true;
     }
@@ -34,6 +39,9 @@ function checkName() {
 function checkSurname() {
     let isOkay = false;
     let value = surname.value;
+    if (value.length==0) {
+        return isOkay;
+    }
     if (value.length>0) {
         isOkay=true;
     }
@@ -71,7 +79,7 @@ function checkDate() {
             isOkay=true;
         }
     }
-    else if (value.length==0) {
+    else if (value1.length==0) {
         isOkay=true;
     }
     if (!isOkay) {
@@ -88,6 +96,9 @@ function checkDate() {
 function checkUsername() {
     let value = username.value;
     let isOkay=false;
+    if (value.length==0) {
+        return isOkay;
+    }
     if (value.length>5) {
         isOkay=true;
     }
@@ -103,6 +114,9 @@ function checkUsername() {
 function checkEmail() {
     let value = email.value;
     let isOkay=false;
+    if (value.length==0) {
+        return isOkay;
+    }
     /* vérifie que l'email commence par un caractère non spécial, accepte ensuite un nombre infini 
     de caractères alpahbumériques et _, accepte ensuite un nombre infini de caractères spéciaux,
     vérifie qu'il n'y a pas de caractère spécial avant le @ de l'email, accepete ensuite un nombre infini
@@ -124,6 +138,9 @@ function checkEmail() {
 function checkPassword() {
     let value = password.value;
     let isOkay=false;
+    if (value.length==0) {
+        return isOkay;
+    }
     /*
     Vérifie la présence des caractères requis dans le string puis vérifie que le mot de passe
     contient au moins 12 caractères non vides
@@ -142,50 +159,33 @@ function checkPassword() {
 }
 
 function checkAll(event) {
-
+    event.preventDefault();
     let hasError = false;
-    let str ="";
-    if (!checkSurname()) {
-        str+="Entrez un Nom !";
+    if (checkSurname()==false) {
+        document.getElementById("Lastname_log").innerHTML="Entrez un nom valide !"
         hasError = true;
     }
-    if (!checkName()) {
-        if (hasError) {
-            str+="\n";
-        }
-        str+="Entrez un prénom !";
+    if (checkName()==false) {
+        document.getElementById("Firstname_log").innerHTML="Entrez un prénom valide !"
         hasError = true;
     }
-    if (!checkDate()) {
-        if (hasError) {
-            str+="\n";
-        }
-        str+="Entrez une date valide !";
+    if (checkDate()==false) {
+        document.getElementById("Date_log").innerHTML="Entrez une date valide !"
         hasError = true;
     }
-    if (!checkUsername()) {
-        if (hasError) {
-            str+="\n";
-        }
-        str+="Entrez un nom d'utilisateur correct !";
+    if (checkUsername()==false) {
+        document.getElementById("Username_log").innerHTML="Entrez un nom d'utilisateur valide !"
         hasError = true;
     }
-    if (!checkEmail()) {
-        if (hasError) {
-            str+="\n";
-        }
-        str+="Entrez un email correct !";
+    if (checkEmail()==false) {
+        document.getElementById("Email_log").innerHTML="Entrez un email valide !"
         hasError = true;
     }
-    if (!checkPassword()) {
-        if (hasError) {
-            str+="\n";
-        }
-        str+="Entrez un mot de passe correct !";
+    if (checkPassword()==false) {
+        document.getElementById("Password_log").innerHTML="Entrez un mot de passe valide !"
         hasError = true;
     }
     if (hasError) {
-        alert(str);
         event.preventDefault();
     }
 
