@@ -1,12 +1,14 @@
 #modal1{
     display:none;
     position:absolute;
-    top:35px;
-    right: 70px;
+    width: 50%;
+    max-width: 400px;
+    right: 0;
+    top:90px;
     z-index: 10;
-    background: linear-gradient(#ffc0c0,#f0745b);
-    width:28%;
-    height: 140%;
+    background: linear-gradient(#e33f0d,#f0745b);
+    border-radius: 30px;
+    box-shadow: 6px 6px 2px 1px #c7b3b3
 
 }
 
@@ -21,7 +23,7 @@
 }
 aside h2{
     color:black;
-    font-size: 2vw;
+    font-size: 25px;
 }
 
 #Inscription{
