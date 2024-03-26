@@ -159,7 +159,6 @@ function checkPassword() {
 }
 
 function checkAll(event) {
-    event.preventDefault();
     let hasError = false;
     if (checkSurname()==false) {
         document.getElementById("Lastname_log").innerHTML="Entrez un nom valide !"

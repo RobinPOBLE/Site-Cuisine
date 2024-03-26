@@ -36,6 +36,11 @@
     border-bottom: none;
 
 }
+.menu a:focus{
+    color: orange;
+    border-bottom: none;
+}
+
 
 .sous{
     display: none;
@@ -46,11 +51,11 @@
     width: 100%;
     z-index: 5;
 }
-.menu ul li:hover > .sous{
+.menu ul li:hover > .sous,
+.menu ul li:focus-within > .sous{
     display: flex;
     flex-direction: column;
 }
-
 .sous a{
     border-bottom: none;
 }

@@ -60,4 +60,8 @@ input{
 h2{
     padding-top: 50px;
     font-size: 45px;
-    color:#00ffe7}
+    color:#49fb21}
+
+input:focus{
+    color:#56b641;
+}

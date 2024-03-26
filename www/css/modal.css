@@ -11,7 +11,9 @@
     box-shadow: 6px 6px 2px 1px #c7b3b3
 
 }
-
+#Image_profil:focus{
+    outline: 3px solid blue !important;
+}
 #Login_form{
     display: flex;
     align-items: center;
@@ -32,3 +34,4 @@ aside h2{
     font-style: italic;
     padding-top:15px
 }
+
