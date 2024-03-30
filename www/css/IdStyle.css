@@ -24,6 +24,8 @@ body {
   #Image_profil{
     width:70px;
     float:right;
+    cursor: pointer;
+
   }
 
   /*
@@ -202,7 +204,11 @@ a:active {
   bottom: 0;
   right: 0;
   z-index: 30;
+  cursor: pointer;
+
 }
+
+
 #fleche_haut{
   width:50px;
 }

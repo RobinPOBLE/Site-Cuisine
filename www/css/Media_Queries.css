@@ -69,6 +69,7 @@
 */
 @media screen and (orientation: portrait) {
   .menu{
+    display:none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;}
   
 }

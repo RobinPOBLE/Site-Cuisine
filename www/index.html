@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/Menu_flex.css">
     <link rel="stylesheet" href="./css/flexbox.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/Menu_mobile.css">
     <link rel="stylesheet" href="./css/Media_Queries.css">
 
 
@@ -35,7 +36,7 @@
 
 </head>
 <header id="haut">
-    <div id="lien_modal1" ><img id="Image_profil" src="./images/icone_profil.jpg" alt="Skill issue" tabindex="0"></div>
+    <div id="lien_modal1" ><img id="Image_profil" src="./images/icone_profil.jpg" alt="icone de connexion"></div>
     <aside id="modal1" > 
         <h2>Connection à Miamiton</h2>
         <div id="Login_form">
@@ -55,6 +56,43 @@
         <a id="Inscription" href="./html/form.html">inscrivez-vous</a>
     </aside>
     <script src="./js/modal.js"></script>
+    <img id="Menu_mobile_png" src="./images/hamburger_menu.png" alt="menu deroulant">
+    <nav class="menu_mobile">
+        <ul>
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+            <li class="a_sous_menu">
+                <a href="#">France</a>
+                <ul class="sous">
+                    <li>
+                        <a href="./html/pays/France.html" tabindex="0">France</a>
+
+                    </li>
+                    <li>
+                        <a href="index.html">Recette </a>
+                    </li>
+                    <li>
+                        <a href="./html/login.html">Login Test </a>
+                    </li>
+                    <li>
+                        <a href="./html/chat.html">chat Test </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./html/pays/Asie.html" tabindex="0">Asie</a>
+                <ul class="sous">
+                    <li>
+                        <a href="./html/recettes\Asie/Mapo_tofu.html">Tofu</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script src="./js/menu_mobile.js"></script>
+
+
     <h1><span id="titre">Miamiton</span> <br>Votre site de cuisine favori</h1>
     
     <nav class="menu">

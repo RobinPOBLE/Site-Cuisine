@@ -8,12 +8,15 @@
     z-index: 10;
     background: linear-gradient(#e33f0d,#f0745b);
     border-radius: 30px;
-    box-shadow: 6px 6px 2px 1px #c7b3b3
+    box-shadow: 6px 6px 2px 1px #c7b3b3;
+    cursor: pointer;
+
 
 }
-#Image_profil:focus{
-    outline: 3px solid blue !important;
+#modal1:focus-within{
+    display:block;
 }
+
 #Login_form{
     display: flex;
     align-items: center;
