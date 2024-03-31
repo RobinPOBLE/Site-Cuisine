@@ -46,6 +46,6 @@ function loadNumbers() {
     for (let i=0; i<infos.length; i+=1) {
         let cur_n=parseFloat(infos[i].getAttribute("data-IngredientCount"));
         console.log("cur_n :",cur_n,"\nvalue :",number.value)
-        ingr_number[i].textContent=(cur_n*number.value).toString();
+        ingr_number[i].textContent=(Math.round(cur_n*number.value*100)/100).toString();
     }
 }
