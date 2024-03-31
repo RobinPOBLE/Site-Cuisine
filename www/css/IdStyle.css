@@ -156,7 +156,7 @@ a:active {
 }
 
 .Ingredients_list {
-  width: 100vh;
+  width: 100vw;
   overflow-x: scroll;
   display: grid;
   grid-template-columns: repeat(4,minmax(0,1fr));
@@ -192,9 +192,55 @@ a:active {
 .name {
   width: 100%;
 }
+
+
+/* 
+  CSS pour le chat
+*/
  
+#Chat_wrapper {
+  padding-left: 30vw;
+  padding-right: 30vw;
+  padding-bottom: 15vw;
+  overflow-x: hidden;
+}
 
+#Type_box {
+  max-width: 40vw;
+  position: absolute;
+  bottom: 20px;
+  resize: none;
+}
 
+#Chat_list {
+  border-radius: 25px;
+  margin: auto;
+  width: 40vw;
+  max-height: 40vh;
+  min-height: 40vh;
+  overflow-y: scroll;
+  background-color: #949393;
+}
+
+#Message_error {
+  position: absolute;
+  bottom: 0px;
+}
+
+.Message_content {
+  overflow-wrap: anywhere;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#Chat_list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#Chat_list {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 
 /*Css pour le footer*/

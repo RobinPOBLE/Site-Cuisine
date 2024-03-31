@@ -74,6 +74,50 @@
   
 }
 
+/*
+ Media Queries pour les recettes
+*/
+
+@media screen and (max-width: 860px) {
+  .Ingredients_list {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Ingredients_list {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
+
+  .Image_container {
+    height: 15vh;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Ingredients_list {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+  }
+
+  .Image_container {
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+/*
+  Media Queries pour le chat
+*/
+
+@media screen and (orientation: portrait) {
+  #Chat_list{
+    min-height: 55vh;
+    max-height: 55vh;
+  }
+}
 
 /*Media queres bouton connection*/
 

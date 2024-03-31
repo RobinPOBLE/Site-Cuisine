@@ -6,7 +6,6 @@ document.getElementsByTagName('head')[0].appendChild(script);
 error_log = document.getElementById("Message_error")
 message_log = document.getElementById("Chat_list")
 body = document.getElementById("Chat_list");
-input = document.getElementById("Type_box");
 form = document.getElementById("Message_send");
 box = document.getElementById("Type_box");
 
@@ -16,18 +15,18 @@ form.addEventListener("submit",function(event) {
     sendMessage();
 });
 
-
-var intervalID = window.setInterval(function() {
+function getMessages() {
     req2=$.ajax({url: "../htbin/chatget.py", dataType: "JSON", success: function(rep2) {
         for (let i=rep2.length-1; i<rep2.length; i++) {
             cur=rep2[i];
-            if (body.lastChild.lastChild!=null && !(cur.msg==body.lastChild.lastChild.innerHTML && cur.user==body.lastChild.firstChild.innerHTML)) {
+            if (body.lastChild.lastChild!=null && !(cur.msg==body.lastChild.lastChild.innerHTML && cur.user+" ("+cur.time+") : "==body.lastChild.firstChild.innerHTML)) {
                 fragment = document.createDocumentFragment();
                 msg_c= fragment.appendChild(document.createElement("div"));
-                msg_c.className="Message_container"
-                usr= msg_c.appendChild(document.createElement("div"))
-                msg=msg_c.appendChild(document.createElement("div"))
-                usr.innerHTML=cur.user;
+                msg_c.className="Message_container";
+                usr= msg_c.appendChild(document.createElement("span"));
+                msg=msg_c.appendChild(document.createElement("span"));
+                msg.className="Message_content";
+                usr.innerHTML=cur.user+" ("+cur.time+") : ";
                 msg.innerHTML=cur.msg;
                 body.appendChild(fragment);
             }
@@ -35,20 +34,20 @@ var intervalID = window.setInterval(function() {
         }
     }
     })
-},1000);
+}
+
+
+var getChat = window.setInterval(getMessages(),1000);
 
 
 
 $(function() {
-    $('form').each(function() {
-        $(this).find('input').keypress(function(e) {
-            // Enter pressed?
-            if(e.which == 10 || e.which == 13) {
-                sendMessage(event);
-            }
-        });
-
-        $(this).find('input[type=submit]').hide();
+    $("#Type_box").keypress(function (e) {
+        if(e.which === 13 && !e.shiftKey) {
+            e.preventDefault();
+        
+            sendMessage(event);
+        }
     });
 });
 
@@ -63,21 +62,24 @@ function sendMessage(event) {
             console.log(typeof(rep)+"\n"+rep.num+"\n"+rep.msg);
         }
         else {
-           req2=$.ajax({url: "../htbin/chatget.py", dataType: "JSON", success: function(rep2) {
+            clearInterval(getChat);
+            req2=$.ajax({url: "../htbin/chatget.py", dataType: "JSON", success: function(rep2) {
                 for (let i=rep2.length-1; i<rep2.length; i++) {
                     cur=rep2[i];
                     fragment = document.createDocumentFragment();
                     msg_c= fragment.appendChild(document.createElement("div"));
                     msg_c.className="Message_container"
-                    usr= msg_c.appendChild(document.createElement("div"))
-                    msg=msg_c.appendChild(document.createElement("div"))
-                    usr.innerHTML=cur.user;
+                    usr= msg_c.appendChild(document.createElement("span"))
+                    msg=msg_c.appendChild(document.createElement("span"))
+                    msg.className="Message_content";
+                    usr.innerHTML=cur.user+" ("+cur.time+") : ";
                     msg.innerHTML=cur.msg;
                     body.appendChild(fragment);
-                    
+                    body.scrollTop=body.scrollHeight;
                 }
-           }
+            }
         })
+        getChat = window.setInterval(getMessages(),1000);
         }
     }
     })
