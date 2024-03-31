@@ -1,66 +1,174 @@
-<nav class="menu_mobile">
-    <ul>
-        <li>
-            <a href="../index.html">Accueil</a>
-        </li>
-        <li class="a_sous_menu1">
-            France
-            <ul class="sous_menu1">
-                <li>
-                    <a href="./pays/France.html">Menu France</a>
+<!DOCTYPE html>
+<html  dir="ltr" lang="fr" xml:lang="fr">
 
-                </li>
-                <li>
-                    <a href="../index.html">Recette </a>
-                </li>
-            </ul>
-        </li>
-        <li class="a_sous_menu2">
-            Asie
-            <ul class="sous_menu2">
-                <li>
-                    <a href="./pays/Asie.html">Menu Asie</a>
-                </li>
-                <li>
-                    <a href="./recettes\Asie/Mapo_tofu.html">Tofu</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="./chat.html">Forum</a>
-        </li>
+<head>
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/IdStyle.css">
+    <link rel="stylesheet" href="../css/Carrousel.css">
+    <link rel="stylesheet" href="../css/Menu_flex.css">
+    <link rel="stylesheet" href="../css/flexbox.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/Menu_mobile.css">
+    <link rel="stylesheet" href="../css/Media_Queries.css">
+
+
         
-    </ul>
-</nav>
-<script src="../js/menu_mobile.js"></script>
+    <!--Ajout d'un flavicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="../favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 
-<h1><span id="titre">Miamiton</span> <br>Votre site de cuisine favori</h1>
 
-<nav class="menu">
-    <ul>
-        <li>
-            <a href="../index.html">Accueil</a>
-        </li>
-        <li>
-            <a href="./pays/France.html" tabindex="0">France</a>
-            <ul class="sous">
-                <li>
-                    <a href="../index.html">Recette </a>
-                </li> 
-            </ul>
-        </li>
-        <li>
-            <a href="./pays/Asie.html" tabindex="0">Asie</a>
-            <ul class="sous">
-                <li>
-                    <a href="./recettes\Asie/Mapo_tofu.html">Tofu</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="./chat.html">Forum</a>
-        </li>
-    </ul>
-</nav>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width ; initial-scale=1.0">
+    <meta name="author" content="SERANGE Valentin/POBLE Robin" >
+    <!--<meta name="keywords" content="miam">
+        Selon mes recherches l'utilisation des "meta keywords" ne sert à rien, elle
+        pourrait même impacter négativement le référencement du site
+        D'où notre choix de ne pas l'avoir inclus dans nos pages html
+        Source : https://www.semrush.com/blog/meta-keywords/ 
+    -->
+    <meta name="description" content="page Miamiton">
+
+    <title>Miamiton</title>
+
+</head>
+<header id="haut">
+    <div id="lien_modal1" ><img id="Image_profil" src="../images/icone_profil.jpg" alt="icone de connexion"></div>
+    <aside id="modal1" > 
+        <h2>Connexion à Miamiton</h2>
+        <div id="Login_form">
+            <form id="Login_body" >
+                <div class="Username_container">
+                    <input name="username" id="username" class="initial" type="text" placeholder="Username :xX_PaulB0cuseDu63_Xx" value="">
+                </div>
+                <div class="Password_container">
+                    <input name="userpwd" id="userpwd" class="initial" type="password" placeholder="Password" value="">
+                <div class="Submit_container">
+                    <input class="initial" type="submit" value="Valider">
+                </div>
+                <div id="error_log"></div>
+            </form>
+        </div>
+        <script src="../js/Login.js"></script>
+        <a id="Inscription" href="./form.html">inscrivez-vous</a>
+    </aside>
+    <script src="../js/modal.js"></script>
+    <img id="Menu_mobile_png" src="../images/hamburger_menu.png" alt="menu deroulant">
+    <nav class="menu_mobile">
+        <ul>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+            <li class="a_sous_menu1">
+                France
+                <ul class="sous_menu1">
+                    <li>
+                        <a href="./pays/France.html">Menu France</a>
+    
+                    </li>
+                    <li>
+                        <a href="../index.html">Recette </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="a_sous_menu2">
+                Asie
+                <ul class="sous_menu2">
+                    <li>
+                        <a href="./pays/Asie.html">Menu Asie</a>
+                    </li>
+                    <li>
+                        <a href="./recettes\Asie/Mapo_tofu.html">Tofu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./chat.html">Forum</a>
+            </li>
+            
+        </ul>
+    </nav>
+    <script src="../js/menu_mobile.js"></script>
+    
+    
+    <h1><span id="titre">Miamiton</span> <br>Votre site de cuisine favori</h1>
+    
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="./pays/France.html" tabindex="0">France</a>
+                <ul class="sous">
+                    <li>
+                        <a href="../index.html">Recette </a>
+                    </li> 
+                </ul>
+            </li>
+            <li>
+                <a href="./pays/Asie.html" tabindex="0">Asie</a>
+                <ul class="sous">
+                    <li>
+                        <a href="./recettes\Asie/Mapo_tofu.html">Tofu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./chat.html">Forum</a>
+            </li>
+        </ul>
+    </nav>
 </header>
+
+<body>
+
+    <main>
+        
+    
+    <div class="fond_form">
+    <h2>Inscription à Miamiton</h2>
+    <form class="Form_body" id="Register_body" action="../htbin/register.py" method="POST">
+        <div id="Lastname_container">
+            <input name="lastname" id="lastname" class="initial" type="text" placeholder="Last Name" value="">
+            <span id="Lastname_log"></span>
+        </div>
+        <div id="Firstname_container">
+            <input name="firstname" id="firstname" class="initial" type="text" placeholder="First Name" value="">
+            <span id="Firstname_log"></span>
+        </div>
+        <div id="Date_container">
+            <input name="birthdate" id="birthdate" class="initial" type="text" placeholder="Date : dd/mm/yyyy" value="">
+            <span id="Date_log"></span>
+        </div>
+        <div id="Username_container">
+            <input name="username" id="username" class="initial" type="text" placeholder="Username :xX_PaulB0cuseDu63_Xx" value="">
+            <span id="Username_log"></span>
+        </div>
+        <div id="Password_container">
+            <input name="userpwd" id="userpwd" class="initial" type="password" placeholder="Password" value="">
+            <span id="Password_log"></span>
+        </div>
+        <div id="Email_container">
+            <input name="useremail" id="useremail" class="initial" type="text" placeholder="Email: paulbocuse@example.com" value="">
+            <span id="Email_log"></span>
+        </div>
+        <div class="Submit_container">
+            <input class="initial" type="submit" value="Valider">
+        </div>
+    </form>
+    </div>
+    <script src="../js/Form.js"></script>
+
+   
+</body>
+
+

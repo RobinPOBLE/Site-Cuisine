@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/Menu_flex.css">
     <link rel="stylesheet" href="../css/flexbox.css">
     <link rel="stylesheet" href="../css/Media_Queries.css">
+    <link rel="stylesheet" href="../css/Menu_mobile.css">
     <link rel="stylesheet" href="../css/form.css">
 
 
@@ -31,28 +32,89 @@
 
 </head>
 <header id="haut">
-    <a href="./form.html"><img id="Image_profil" src="../images/icone_profil.jpg" alt="Skill issue"></a>
+    <div id="lien_modal1" ><img id="Image_profil" src="../images/icone_profil.jpg" alt="icone de connexion"></div>
+    <aside id="modal1" > 
+        <h2>Connexion à Miamiton</h2>
+        <div id="Login_form">
+            <form id="Login_body" >
+                <div class="Username_container">
+                    <input name="username" id="username" class="initial" type="text" placeholder="Username :xX_PaulB0cuseDu63_Xx" value="">
+                </div>
+                <div class="Password_container">
+                    <input name="userpwd" id="userpwd" class="initial" type="password" placeholder="Password" value="">
+                <div class="Submit_container">
+                    <input class="initial" type="submit" value="Valider">
+                </div>
+                <div id="error_log"></div>
+            </form>
+        </div>
+        <script src="../js/Login.js"></script>
+        <a id="Inscription" href="./form.html">inscrivez-vous</a>
+    </aside>
+    <script src="../js/modal.js"></script>
+    <img id="Menu_mobile_png" src="../images/hamburger_menu.png" alt="menu deroulant">
+    <nav class="menu_mobile">
+        <ul>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+            <li class="a_sous_menu1">
+                France
+                <ul class="sous_menu1">
+                    <li>
+                        <a href="./pays/France.html">Menu France</a>
+    
+                    </li>
+                    <li>
+                        <a href="../index.html">Recette </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="a_sous_menu2">
+                Asie
+                <ul class="sous_menu2">
+                    <li>
+                        <a href="./pays/Asie.html">Menu Asie</a>
+                    </li>
+                    <li>
+                        <a href="./recettes\Asie/Mapo_tofu.html">Tofu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./chat.html">Forum</a>
+            </li>
+            
+        </ul>
+    </nav>
+    <script src="../js/menu_mobile.js"></script>
+    
+    
     <h1><span id="titre">Miamiton</span> <br>Votre site de cuisine favori</h1>
+    
     <nav class="menu">
         <ul>
             <li>
                 <a href="../index.html">Accueil</a>
             </li>
-            <li class="deroulant">
-                <a href="./pays/France.html">France</a>
+            <li>
+                <a href="./pays/France.html" tabindex="0">France</a>
                 <ul class="sous">
                     <li>
-                        <a href="../index.html">Accueil</a>
+                        <a href="../index.html">Recette </a>
+                    </li> 
+                </ul>
+            </li>
+            <li>
+                <a href="./pays/Asie.html" tabindex="0">Asie</a>
+                <ul class="sous">
+                    <li>
+                        <a href="./recettes\Asie/Mapo_tofu.html">Tofu</a>
                     </li>
                 </ul>
             </li>
-            <li class="deroulant">
-                <a href="./pays/Asie.html">Asie</a>
-                <ul class="sous">
-                    <li>
-                        <a href="./recettes/Asie/Mapo_tofu.html">Tofu</a>
-                    </li>
-                </ul>
+            <li>
+                <a href="./chat.html">Forum</a>
             </li>
         </ul>
     </nav>
