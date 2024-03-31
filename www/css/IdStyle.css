@@ -242,6 +242,10 @@ a:active {
   scrollbar-width: none;  /* Firefox */
 }
 
+.Message_container {
+  padding-left: 1vw;
+}
+
 
 /*Css pour le footer*/
 footer {

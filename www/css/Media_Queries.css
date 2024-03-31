@@ -114,8 +114,25 @@
 
 @media screen and (orientation: portrait) {
   #Chat_list{
-    min-height: 55vh;
-    max-height: 55vh;
+    min-height: 70vh;
+    max-height: 70;
+    width: 70vw;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #Chat_wrapper{
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 7vh;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #Type_box{
+    min-width: 70vw;
+    max-width: 70vw;
+    min-height: 10vh;
   }
 }
 
