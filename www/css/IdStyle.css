@@ -227,3 +227,25 @@ footer {
 #fleche_haut{
   width:50px;
 }
+
+/*Gestion des tableaux*/
+table{
+  margin-left: 40%;
+}
+table, caption, th, td {
+
+  border: 2px solid skyblue;
+    border-collapse: collapse;
+  
+  }
+  caption, th, td {
+  
+  padding: 8px;
+  
+  }
+  
+  th {
+  
+  background-color: blue;
+  
+  }
