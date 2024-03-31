@@ -197,12 +197,28 @@ a:active {
 /* 
   CSS pour le chat
 */
+
+.ad {
+  width: 20vw;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+#Chat_container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
  
 #Chat_wrapper {
+  /*
   padding-left: 30vw;
   padding-right: 30vw;
   padding-bottom: 15vw;
+  */
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 #Type_box {
