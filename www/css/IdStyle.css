@@ -147,18 +147,33 @@ a:active {
   display: inline-flex;
 }
 
-.Ingredients_list {
+.Ingredients_button_container {
   display: flex;
 }
 
+.Ingredients_button_whole {
+  margin: auto;
+}
+
+.Ingredients_list {
+  width: 100vh;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  margin: auto;
+}
+
 .Ingredient_tile {
-  width: 10%;
+  width: 100%;
+  min-width: 100%;
   margin: 10px;
   text-align: center;
 }
 
 .Image_container {
-  height: 10vh;
+  height: 20vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .Ingredient_tile_content {
