@@ -1,0 +1,66 @@
+<nav class="menu_mobile">
+    <ul>
+        <li>
+            <a href="../index.html">Accueil</a>
+        </li>
+        <li class="a_sous_menu1">
+            France
+            <ul class="sous_menu1">
+                <li>
+                    <a href="./pays/France.html">Menu France</a>
+
+                </li>
+                <li>
+                    <a href="../index.html">Recette </a>
+                </li>
+            </ul>
+        </li>
+        <li class="a_sous_menu2">
+            Asie
+            <ul class="sous_menu2">
+                <li>
+                    <a href="./pays/Asie.html">Menu Asie</a>
+                </li>
+                <li>
+                    <a href="./recettes\Asie/Mapo_tofu.html">Tofu</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="./chat.html">Forum</a>
+        </li>
+        
+    </ul>
+</nav>
+<script src="../js/menu_mobile.js"></script>
+
+
+<h1><span id="titre">Miamiton</span> <br>Votre site de cuisine favori</h1>
+
+<nav class="menu">
+    <ul>
+        <li>
+            <a href="../index.html">Accueil</a>
+        </li>
+        <li>
+            <a href="./pays/France.html" tabindex="0">France</a>
+            <ul class="sous">
+                <li>
+                    <a href="../index.html">Recette </a>
+                </li> 
+            </ul>
+        </li>
+        <li>
+            <a href="./pays/Asie.html" tabindex="0">Asie</a>
+            <ul class="sous">
+                <li>
+                    <a href="./recettes\Asie/Mapo_tofu.html">Tofu</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="./chat.html">Forum</a>
+        </li>
+    </ul>
+</nav>
+</header>

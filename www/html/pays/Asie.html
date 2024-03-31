@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../css/Carrousel.css">
     <link rel="stylesheet" href="../../css/Menu_flex.css">
     <link rel="stylesheet" href="../../css/flexbox.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="../../css/Menu_mobile.css">
     <link rel="stylesheet" href="../../css/Media_Queries.css">
     
     <!--Ajout d'un flavicon-->
@@ -28,7 +30,62 @@
 
 </head>
 <header id="haut">
-    <a href="../form.html"><img id="Image_profil" src="../../images/icone_profil.jpg" alt="Skill issue"></a>
+    <div id="lien_modal1" ><img id="Image_profil" src="../../images/icone_profil.jpg" alt="icone de connexion"></div>
+    <aside id="modal1" > 
+        <h2>Connexion à Miamiton</h2>
+        <div id="Login_form">
+            <form id="Login_body" >
+                <div class="Username_container">
+                    <input name="username" id="username" class="initial" type="text" placeholder="Username :xX_PaulB0cuseDu63_Xx" value="">
+                </div>
+                <div class="Password_container">
+                    <input name="userpwd" id="userpwd" class="initial" type="password" placeholder="Password" value="">
+                <div class="Submit_container">
+                    <input class="initial" type="submit" value="Valider">
+                </div>
+                <div id="error_log"></div>
+            </form>
+        </div>
+        <script src="../../js/Login.js"></script>
+        <a id="Inscription" href="../../html/form.html">inscrivez-vous</a>
+    </aside>
+    <script src="../../js/modal.js"></script>
+    <img id="Menu_mobile_png" src="../../images/hamburger_menu.png" alt="menu deroulant">
+    <nav class="menu_mobile">
+        <ul>
+            <li>
+                <a href="../../index.html">Accueil</a>
+            </li>
+            <li class="a_sous_menu1">
+                France
+                <ul class="sous_menu1">
+                    <li>
+                        <a href="./France.html">Menu France</a>
+
+                    </li>
+                    <li>
+                        <a href="../recettes\Asie/Mapo_tofu.html">Tofu</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="a_sous_menu2">
+                Asie
+                <ul class="sous_menu2">
+                    <li>
+                        <a href="./Asie.html">Menu Asie</a>
+                    </li>
+                    <li>
+                        <a href="../recettes\Asie/Mapo_tofu.html">Tofu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../chat.html">Forum</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="../../js/menu_mobile.js"></script>
+   
     <h1><span id="titre">Miamiton</span> <br>Votre site de cuisine favori</h1>
     <nav class="menu">
         <ul>
@@ -51,12 +108,30 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="../chat.html">Forum</a>
+            </li>
         </ul>
     </nav>
 </header>
 <body>
 
 <main>
+    <p class="Intro" tabindex="0">La cuisine asiatique est réputée pour sa diversité, son raffinement et son héritage culturel. Des plats emblématiques comme le sushi et le pad thaï symbolisent ses origines et son savoir-faire culinaire. Des étals de rue aux restaurants étoilés, elle propose une expérience gustative unique, mettant en valeur la fraîcheur des ingrédients et la convivialité des repas partagés dans une atmosphère chaleureuse.
+    </p>
+    <table>
+        <caption>Les meilleures recettes asiatiques</caption>
+        <tr><th>Nom</th><th>Origine</th><th>Description</th><th>Note</th></tr>
+        <tr><td><strong>Sushi</strong></td><td>Japon</td><td>Les sushis sont des petits rouleaux de riz vinaigré garnis de poisson cru, de fruits de mer, ou de légumes, souvent accompagnés de sauce soja et de wasabi.</td><td>9/10</td>
+        </tr>
+        <tr><td><strong>Phở</strong></td><td>Vietnam</td><td>Le Phở est une soupe vietnamienne à base de bouillon de bœuf ou de poulet, de nouilles de riz, de fines tranches de viande et d'herbes aromatiques.</td><td>8/10</td>
+        </tr>
+        <tr><td><strong>Pad Thai</strong></td><td>Thaïlande</td><td>Le Pad Thai est un plat thaïlandais à base de nouilles de riz sautées, de crevettes, de tofu ou de poulet, d'œufs, de cacahuètes, de pousses de soja et de sauce tamarin.</td><td>7/10</td>
+        </tr>
+      </table>
+      
+    
+    <img class="deco" src="../../images/Asie.jpg" alt="Paysage asiatique"  >
     
 </main>
 

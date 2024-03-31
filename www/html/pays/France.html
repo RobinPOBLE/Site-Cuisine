@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="../../css/Carrousel.css">
     <link rel="stylesheet" href="../../css/Menu_flex.css">
     <link rel="stylesheet" href="../../css/flexbox.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="../../css/Menu_mobile.css">
     <link rel="stylesheet" href="../../css/Media_Queries.css">
-
+    
     <!--Ajout d'un flavicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="../../favicon_package_v0.16/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../favicon_package_v0.16/favicon-32x32.png">
@@ -17,43 +19,100 @@
     <link rel="manifest" href="../../favicon_package_v0.16/site.webmanifest">
     <link rel="mask-icon" href="../../favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff"> 
+    <meta name="theme-color" content="#ffffff">
 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width ; initial-scale=1.0">
+    <meta name="author" content="SERANGE Valentin/POBLE Robin" >
+    <meta name="description" content="page Miamiton">
 
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width ; initial-scale=1.0">
-<meta name="author" content="SERANGE Valentin/POBLE Robin" >
-<meta name="description" content="page Miamiton">
-
-<title>Miamiton</title>
+    <title>Miamiton</title>
 
 </head>
 <header id="haut">
-    <a href="../form.html"><img id="Image_profil" src="../../images/icone_profil.jpg" alt="Skill issue"></a>
+    <div id="lien_modal1" ><img id="Image_profil" src="../../images/icone_profil.jpg" alt="icone de connexion"></div>
+    <aside id="modal1" > 
+        <h2>Connexion à Miamiton</h2>
+        <div id="Login_form">
+            <form id="Login_body" >
+                <div class="Username_container">
+                    <input name="username" id="username" class="initial" type="text" placeholder="Username :xX_PaulB0cuseDu63_Xx" value="">
+                </div>
+                <div class="Password_container">
+                    <input name="userpwd" id="userpwd" class="initial" type="password" placeholder="Password" value="">
+                <div class="Submit_container">
+                    <input class="initial" type="submit" value="Valider">
+                </div>
+                <div id="error_log"></div>
+            </form>
+        </div>
+        <script src="../../js/Login.js"></script>
+        <a id="Inscription" href="../../html/form.html">inscrivez-vous</a>
+    </aside>
+    <script src="../../js/modal.js"></script>
+    <img id="Menu_mobile_png" src="../../images/hamburger_menu.png" alt="menu deroulant">
+    <nav class="menu_mobile">
+        <ul>
+            <li>
+                <a href="../../index.html">Accueil</a>
+            </li>
+            <li class="a_sous_menu1">
+                France
+                <ul class="sous_menu1">
+                    <li>
+                        <a href="./France.html">Menu France</a>
+
+                    </li>
+                    <li>
+                        <a href="../recettes\Asie/Mapo_tofu.html">Tofu</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="a_sous_menu2">
+                Asie
+                <ul class="sous_menu2">
+                    <li>
+                        <a href="./Asie.html">Menu Asie</a>
+                    </li>
+                    <li>
+                        <a href="../recettes\Asie/Mapo_tofu.html">Tofu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../chat.html">Forum</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="../../js/menu_mobile.js"></script>
+   
     <h1><span id="titre">Miamiton</span> <br>Votre site de cuisine favori</h1>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="../../index.html">Accueil</a>
-                </li>
-                <li class="deroulant">
-                    <a href="./France.html">France</a>
-                    <ul class="sous">
-                        <li>
-                            <a href="../../index.html">Recette </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="deroulant">
-                    <a href="./Asie.html">Asie</a>
-                    <ul class="sous">
-                        <li>
-                            <a href="../recettes\Asie/Mapo_tofu.html">Recette mapo tofu</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="../../index.html">Accueil</a>
+            </li>
+            <li class="deroulant">
+                <a href="./France.html">France</a>
+                <ul class="sous">
+                    <li>
+                        <a href="../../index.html">Recette </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="deroulant">
+                <a href="./Asie.html">Asie</a>
+                <ul class="sous">
+                    <li>
+                        <a href="../recettes\Asie/Mapo_tofu.html">Recette mapo tofu</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="../chat.html">Forum</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <main>
 <p class="Intro" tabindex="0">
@@ -65,9 +124,9 @@
 
 <tr> <td><strong>Boeuf bourguignon</strong></td> <td>Bourgogne</td> <td>cette recette de grand-mère à base de bœuf, vin rouge et champignons se concentre essentiellement sur une cuisson mijotée au pot-au-feu. Cuisiné avec des lardons et du fond de veau, on le parfume généreusement sans oublier de le saupoudrer d’amour et convivialité !</td> <td>9/10</td> </tr>
 
-<tr> <td><strong>Tartiflette</strong></td> <td>Savoie</td> <td>Pour préparer une tartiflette, les pommes de terre sont cuites directement sans cuisson préalable ou précuites (à l'eau, à la vapeur ou, de préférence, à la poêle) et épluchées. Séparément, on fait revenir des oignons et des lardons. On coupe ensuite des reblochons en deux par la tranche et on les dispose croûte vers le bas ou croûte vers le haut (selon les écoles) sur le dessus du plat</td> <td>7/10</td> </tr>
+<tr> <td><strong>Tartiflette</strong></td> <td>Savoie</td> <td>Pour préparer une tartiflette, les pommes de terre sont cuites directement sans cuisson préalable ou précuites (à l'eau, à la vapeur ou, de préférence, à la poêle) et épluchées. Séparément, on fait revenir des oignons et des lardons. On coupe ensuite des reblochons en deux par la tranche et on les dispose croûte vers le bas ou croûte vers le haut (selon les écoles) sur le dessus du plat</td> <td>8/10</td> </tr>
 
-<tr> <td><strong>Galette de sarrasin</strong></td> <td>Haute-Bretagne</td> <td>Il existe plusieurs recettes de pâtes, la base étant un mélange de farine de sarrasin, de sel et d'eau, et éventuellement d'un œuf servant de liant. La pâte est en principe cuite sur une « tuile » (bilig, en breton) (ou avec une crêpière)m 1. La tuile est en fer forgé et en fonte depuis le XVe siècle, il s'agissait peut-être auparavant d'une plaque de terre cuite ou d'une pierre ronde. L’écriture « jalète » est attestée, venant de « jalet » (galet)</td> <td>8/10</td> </tr>
+<tr> <td><strong>Galette de sarrasin</strong></td> <td>Haute-Bretagne</td> <td>Il existe plusieurs recettes de pâtes, la base étant un mélange de farine de sarrasin, de sel et d'eau, et éventuellement d'un œuf servant de liant. La pâte est en principe cuite sur une « tuile » (bilig, en breton) (ou avec une crêpière)m 1. La tuile est en fer forgé et en fonte depuis le XVe siècle, il s'agissait peut-être auparavant d'une plaque de terre cuite ou d'une pierre ronde. L’écriture « jalète » est attestée, venant de « jalet » (galet)</td> <td>7/10</td> </tr>
 
 
 </table>
