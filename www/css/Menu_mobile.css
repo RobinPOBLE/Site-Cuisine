@@ -16,7 +16,7 @@
     .menu_mobile {
         display: none;
         position: absolute;
-        top: 40px;
+        top: 101px;
         left: 0;
         background-color: #f0745b;
         width: 40%;
@@ -30,15 +30,25 @@
     }
     .menu_mobile ul li {
         padding: 10px;
-    }
-    .menu_mobile ul li:last-child {
-        border-bottom: none;
+        border: 1px solid black;
     }
     .menu_mobile ul li a {
         text-decoration: none;
+        color: white;
     }
-    .sous_menu {
+    .a_sous_menu1,
+    .a_sous_menu2{
+        cursor:pointer;
+    }
+    .sous_menu1,
+    .sous_menu2  {
         display: none;
+        flex-direction: column;
+    }
+    .sous_menu1.show,
+    .sous_menu2.show {
+        padding-top: 10px;
+        display: flex;
     }
 
 }
