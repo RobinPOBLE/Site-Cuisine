@@ -1,3 +1,7 @@
+/*
+    Nouveau js pour les chemins des images
+*/
+
 document.getElementById("outer3").addEventListener("click", toggleState3);
     
 function toggleState3() {
@@ -33,9 +37,9 @@ function toggleState3() {
 
 
 let imgObject = [
-  ['images/Tartiflette.jpg',"Tartiflette traditionelle","html/recettes/France/Tartiflette.html"],
-  ['images/MapoTofu.jpg',"Mapo Tofu qui pique de ouf","html/recettes/Asie/Mapo_tofu.html"],
-  ['images/Boeuf_Bourguignon.jpg',"Boeuf Bourguignon selon Paul Bocuse","html/recettes/France/Boeuf_Bourguignon.html"],
+  ['../../../images/Tartiflette/Tartiflette1.jpg',""],
+  ['../../../images/Tartiflette/Tartiflette2.jpg',""],
+  ['../../../images/Tartiflette/Tartiflette3.jpg',""],
 ];
 
 
@@ -47,18 +51,22 @@ function loadGallery() {
 
   let mainView = document.getElementById("mainView");
   mainView.style.background = "url(" + imgObject[mainImg][0] + ")";
-  mainView.style.backgroundSize = "cover";
+  mainView.style.backgroundSize = "contain";
+  mainView.style.backgroundRepeat = "no-repeat";
+  mainView.style.backgroundPosition = "center";
 
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg][0] + ")";
   leftView.style.backgroundSize = "cover";
+  leftView.style.backgroundPosition = "center";
   
   let rightView = document.getElementById("rightView");
   rightView.style.background = "url(" + imgObject[nextImg][0] + ")";
-  leftView.style.backgroundSize = "cover";
+  rightView.style.backgroundSize = "cover";
+  rightView.style.backgroundPosition = "center";
   
   let linkTag = document.getElementById("linkTag")
-  linkTag.href = imgObject[mainImg][2];
+  linkTag.href = imgObject[mainImg][0];
 
   let mainText = document.getElementById("mainText");
   mainText.innerHTML=imgObject[mainImg][1];

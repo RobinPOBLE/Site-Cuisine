@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="fr" xml:lang="fr">
+
+<head>
+
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/IdStyle.css">
+    <link rel="stylesheet" href="../../../css/Carrousel.css">
+    <link rel="stylesheet" href="../../../css/Menu_flex.css">
+    <link rel="stylesheet" href="../../../css/flexbox.css">
+    <link rel="stylesheet" href="../../../css/Media_Queries.css">
+
+    <!--Ajout d'un flavicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="../../../favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="../../../favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width ; initial-scale=1.0">
+<meta name="author" content="SERANGE Valentin/POBLE Robin" >
+<meta name="description" content="page Miamiton">
+
+<title>Miamiton</title>
+
+</head>
+<header id="haut">
+    <a href="../../form.html"><img id="Image_profil" src="../../../images/icone_profil.jpg" alt="Skill issue"></a>
+
+    <h1><span id="titre">Miamiton</span> <br>Votre site de cuisine favori</h1>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="../../../index.html">Accueil</a>
+            </li>
+            <li class="deroulant">
+                <a href="../../pays/France.html">France</a>
+                <ul class="sous">
+                    <li>
+                        <a href="../../../index.html">Accueil</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="deroulant">
+                <a href="../../pays/Asie.html">Asie</a>
+                <ul class="sous">
+                    <li>
+                        <a href="./Mapo_tofu.html">Tofu</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+    <main>
+        
+    
+    <article>
+        <section>
+            <h2 class="Titre_recette">Tartiflette</h2>
+            <!--Carrousel dynamique-->
+            <div id="container">
+                <div id="toggleContainer">
+                    <label></label>
+                    <div id="toggle">
+                        <div id="outer3">
+                            <div id="slider3"></div>
+                        </div>
+                        <label></label>
+                    </div>
+                </div>
+                <div id="galleryView">
+                    <div id="galleryContainer">
+                        <div id="leftView"></div>
+                        <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+                        <a id="linkTag">
+                        <div id="mainView"></div>
+                        <div id="mainText"></div>
+                        </a>
+                        <div id="rightView"></div>
+                        <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <script src="../../../js/Carou_Tartiflette.js"></script>
+            <!--Fin carrousel-->
+        </section>
+
+        <!--Liste d'ingrédients modulable-->
+        <section>
+            <div class="Ingredients_container">
+                <div class="Ingredients_title"> 
+                    <h2>Ingrédients</h2>
+                    <hr>
+                </div>
+                <div class="Ingredients_main">
+                    <div class="Ingredients_button_container">
+                        <div class="Ingredients_button_whole">
+                            <span class="minus"><input class="minus_button" type="button" value="-"></span>
+                            <span class="quantity"><input class="ingredients_button" value="3" min="1" max="50"> personne(s) </span>
+                            <span class="plus"><input class="plus_button" type="button" value="+"></span>
+                        </div>
+                    </div>
+                    <div class="Ingredients_list">
+                        <div class="Ingredient_tile" id="poivre">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/poivre.png" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="0">
+                                <span class="count">0</span>
+                                <span class="name">poivre</span>
+                            </div>
+                        </div>
+                        <div class="Ingredient_tile" id="sel">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/sel.png" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="0">
+                                <span class="count">0</span>
+                                <span class="name">sel</span>
+                            </div>
+                        </div>
+                        <div class="Ingredient_tile" id="Huile">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/huile.png" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="1">
+                                <span class="count">1</span>
+                                <span class="name">c.à.s d'huile</span>
+                            </div>
+                        </div>
+                        <div class="Ingredient_tile" id="Reblochon">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/reblochon.png" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="0.5">
+                                <span class="count">0.5</span>
+                                <span class="name">Reblochon</span>
+                            </div>
+                        </div>
+                        <div class="Ingredient_tile" id="Oignons">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/Oignons.png" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="50">
+                                <span class="count">50</span>
+                                <span class="name">g d'oignons émincés</span>
+                            </div>
+                        </div>
+                        <div class="Ingredient_tile" id="Lardons">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/lardons.png" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="50">
+                                <span class="count">50</span>
+                                <span class="name">g de lardons fumés</span>
+                            </div>
+                        </div>
+                        <div class="Ingredient_tile" id="Patate">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/patate.png" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="1">
+                                <span class="count">1</span>
+                                <span class="name">kg de pommes de terre</span>
+                            </div>
+                        </div>
+                        <div class="Ingredient_tile" id="ail">
+                            <div class="Image_container">
+                                <img class="Ingredient_image" src="../../../images/ingredients/ail.png" alt="Skill Issue">
+                            </div>
+                            <div class="Ingredient_tile_content" data-IngredientCount="1">
+                                <span class="count">1</span>
+                                <span class="name">gousses d'ail</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <script src="../../../js/ingredients.js"></script>
+            <!-- Fin ingrédients -->
+        </section>
+        <div class="Prep_title">
+            <h2>Préparation</h2>
+            <hr>
+        </div>
+        <div class="Prep_and_image">
+            <div class="Prep_container">            
+                <section class="Prep_main">
+                    <div class="Prep_step">
+                        <h3>Etape 1</h3>
+                        <p>
+                            Eplucher les pommes de terre, les couper en dés, bien les rincer et les essuyer dans un torchon propre.
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 2</h3>                    
+                        <p>
+                            Faire chauffer l'huile dans une poêle, y faire fondre les oignons..
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 3</h3>                    
+                        <p>
+                            Lorsque les oignons sont fondus, ajouter les pommes de terre et les faire dorer de tous les côtés.
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 4</h3>
+                        <p>
+                            Lorsqu'elles sont dorées, ajouter les lardons et finir de cuire. Éponger le surplus de gras avec une feuille de papier essuie-tout.
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 5</h3>                    
+                        <p>
+                            D'autre part, gratter la croûte du reblochon et le couper en deux (ou en quatre).
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 6</h3>
+                        <p>
+                            Préchauffer le four à 200°C (thermostat 6-7) et préparer un plat à gratin en frottant le fond et les bords avec la gousse d'ail épluchée.
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 7</h3>
+                        <p>
+                            Dans le plat à gratin, étaler une couche de pommes de terre aux lardons, disposer dessus la moitié du reblochon, puis de nouveau des pommes de terre. Terminer avec le reste du reblochon (croûte vers les pommes de terre).    
+                        </p>
+                    </div>
+                    <div class="Prep_step">
+                        <h3>Etape 8</h3>
+                        <p>
+                            Enfourner pour environ 20 minutes de cuisson.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <figure class="Cook_container">
+                <img class="Cook_image" src="../../../images/Paul_bocuse.jpg" alt="Portrait de Paul Bocuse">
+                <figcaption><strong>Paul bocuse</strong></figcaption>
+            </figure>
+        </div>
+    </article>
+    
+
+    <article>
+        <div id="baratinContainer">
+            <div id="baratin">
+                <h2>A Propos de nous</h2>
+                <p>Ce site cherche a promouvoir la paix dans le monde par le biais de la cuisine. </p>
+                <p>En effet en mélangeant les culture de divers continent, Miamiton espère rapprocher les peuples
+                et leur permettre d'oublier leur différents. </p>
+                <p>Nous ne sommes que des humains après tout, et comme l'a dit <strong>Samuel Chamberlain</strong> : </p>
+                <p><strong>Le bel art de la gastronomie est un art chaleureux. Il dépasse la barrière du langage, 
+                    fait des amis parmi les gens civilisés et réchauffe le coeur.</strong></p>
+            </div>
+        </div>
+    </article>
+</main>
+
+
+</body>
+
+<footer>
+    <a class="top" href="#haut">Haut</a>
+    <p>Open source Miamiton (pas une copie de marmiton)</p>
+</footer>
+
+
