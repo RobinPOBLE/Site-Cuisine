@@ -141,16 +141,24 @@
     <main>
         
     <div id="Chat_wrapper">
-        <div id="Chat_container">
-            <div id="Chat_list">
+            <img class="ad" id="AD1" src="../images/Pubs/Don_Papa.jpg">
+            <div id="Chat_container">
+                <div id="Chat_list">
+                    <span id="Welcome">Bienvenue dans le chat de Miamiton !
+                        Voici quelques règles :
+                        - Pas de racisme ! Tout le monde mérite de manger !
+                        - Soyez polis ! Retournez sur Twitter si vous êtes énervés...
+                        - Parlez de cuisine ! Votre vie n'intéresse que vous...
+                    </span>
+                </div>
+                <div id="Chat_send">
+                    <form id="Message_send" action="../htbin/chatsend.py">
+                        <textarea id="Type_box" name="msg" rows="5" cols="62" placeholder="Entrez votre premier chat !"></textarea>  
+                    </form>
+                    <span id="Message_error"></span>
+                </div>
             </div>
-            <div id="Chat_send">
-                <form id="Message_send" action="../htbin/chatsend.py">
-                    <textarea id="Type_box" name="msg" rows="5" cols="62"></textarea>  
-                </form>
-                <span id="Message_error"></span>
-            </div>
-        </div>
+            <img class="ad" id="AD2" src="../images/Pubs/Paix_Dieu.jpg">
     </div>
 
 <script src="../js/Chat.js"></script>   
