@@ -10,18 +10,18 @@ body {
     background-color: #ececec; 
   }
 
-  header{
+header{
     position: sticky;
     top:0;
     background-color: #f0745b;
     color:white;
     z-index: 1000;
   }
-  header > h1{
+header > h1{
     padding: 15px;
   }
 
-  #Image_profil{
+#Image_profil{
     width:70px;
     float:right;
     cursor: pointer;
@@ -32,39 +32,39 @@ body {
     CSS pour le titre de la recette traité a part
   */
 
-  .Titre_recette {
+.Titre_recette {
     font-weight: bold;
     text-align: center;
     margin-top: 10vh;
   }
-  h1{
+h1{
     margin:0;
     text-align: center;
   }
-  h1 #titre{
+h1 #titre{
     display:bloc;
   }
-  h2 {
+h2 {
     text-align: center;
 
     margin-bottom: 15px;
     font-weight: bold;
   }
 
-  h3 {
+h3 {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 30px;
   }
 
-  #Intro{
+#Intro{
     font-size: 20px;
     margin-inline: 10%;
     text-align: justify;
   }
   
 
-  #baratinContainer{
+#baratinContainer{
     padding-top:40px;
     font-size: 12px;
     text-align: center;
@@ -73,7 +73,7 @@ body {
     Taille de police pour le sous titre du site
   */
 
-  .Sous_titre_site {
+.Sous_titre_site {
     font-size: 25px;
   }
 
@@ -81,7 +81,7 @@ body {
     Modifie la tête des links
   */
 
-  a {
+a {
     text-decoration: none;
     color:black;
   }
@@ -183,7 +183,7 @@ a:active {
 
 
 /*Css pour le footer*/
- footer {
+footer {
     position: absolute;  
     width: 100%;
     margin-top: 50px;

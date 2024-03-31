@@ -1,6 +1,9 @@
 #Menu_mobile_png{
     display:none;
 }
+.menu_mobile {
+    display: none;
+}
 @media screen and (orientation: portrait) {
     #Menu_mobile_png{
         display:flex;
@@ -34,11 +37,8 @@
     .menu_mobile ul li a {
         text-decoration: none;
     }
-    .sous-menu {
+    .sous_menu {
         display: none;
     }
-    
-    .sous-menu.show {
-        display: block;
-    }
+
 }

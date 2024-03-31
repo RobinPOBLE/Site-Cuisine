@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
     var menuButton = document.getElementById("Menu_mobile_png");
-    var mobileMenu = document.querySelector(".menu_mobile");
-    
+    var menu_mobile = document.querySelector(".menu_mobile");
+    var buttonSous = document.querySelector(".a_menuSous");
+    var menuSous = document.querySelector(".menuSous");
     menuButton.addEventListener("click", function() {
-        if (mobileMenu.style.display === "none") {
-            mobileMenu.style.display = "flex";
+        if (menu_mobile.style.display === "none") {
+            menu_mobile.style.display = "flex";
         } else {
-            mobileMenu.style.display = "none";
+            menu_mobile.style.display = "none";
         }
+    });
+
+    buttonSous.addEventListener("click", function() {
+        menuSous.classList.toggle("show");
     });
 });
 
